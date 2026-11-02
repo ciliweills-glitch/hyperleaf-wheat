@@ -1,0 +1,18 @@
+[Unit]
+Description=HyperLeaf Original four-layer TIFF inference
+Requires=hyperleaf-hardware.service
+After=hyperleaf-hardware.service
+
+[Service]
+Type=simple
+Environment=XILINX_XRT=/usr
+WorkingDirectory=@PROJECT_ROOT@/fpga/overlay
+ExecStart=/usr/local/share/pynq-venv/bin/python3 -u serve_tiff.py --bit @PROJECT_ROOT@/fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax7020_cnn.bit --pack @PROJECT_ROOT@/golden/int16_ptq --norm @PROJECT_ROOT@/model/original_2dcnnmask/run_metadata/normalization.json --model main --pl-preprocess --reuse-overlay --inflight 3 --host 0.0.0.0 --port 8765
+ExecStartPost=/usr/bin/python3 @PROJECT_ROOT@/ui/screen/systemd/wait_port.py 8765
+KillSignal=SIGINT
+KillMode=mixed
+TimeoutStartSec=90
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

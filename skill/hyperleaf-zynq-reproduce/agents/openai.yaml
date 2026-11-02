@@ -1,0 +1,4 @@
+interface:
+  display_name: "HyperLeaf Zynq 跨板复现"
+  short_description: "复现Original四层AX7020工程，运行TIFF与RTL对照，按需复用Zynq计算IP"
+  default_prompt: "使用 $hyperleaf-zynq-reproduce，在独立目录复现给定Original四层/v1.4工程，运行事务仿真与十张真实TIFF离线对照，按实际结果说明已验证范围。"

@@ -1,0 +1,8 @@
+build/
+/results/
+__pycache__/
+*.pyc
+.Xil/
+*.jou
+ui/screen/runtime/
+recordings/

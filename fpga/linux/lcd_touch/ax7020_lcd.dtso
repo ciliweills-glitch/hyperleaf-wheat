@@ -1,0 +1,85 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    fragment@0 {
+        target = <&i2c0>;
+        __overlay__ {
+            status = "okay";
+            clock-frequency = <100000>;
+            #address-cells = <1>;
+            #size-cells = <0>;
+            touchscreen@5d {
+                compatible = "alinx,an071";
+                reg = <0x5d>;
+                interrupt-parent = <&intc>;
+                interrupts = <0 29 4>;
+            };
+        };
+    };
+
+    fragment@1 {
+        target = <&amba>;
+        __overlay__ {
+            #address-cells = <1>;
+            #size-cells = <1>;
+            lcd_dynclk: clock-controller@43c10000 {
+                compatible = "dglnt,axi-dynclk";
+                reg = <0x43c10000 0x10000>;
+                #clock-cells = <0>;
+                clocks = <&clkc 15>;
+                assigned-clocks = <&clkc 16>;
+                assigned-clock-rates = <140000000>;
+                clock-output-names = "lcd_pixel_clk";
+            };
+            lcd_vtc: vtc@43c20000 {
+                compatible = "xlnx,bridge-v-tc-6.1";
+                reg = <0x43c20000 0x10000>;
+                clocks = <&clkc 15>, <&lcd_dynclk>;
+                clock-names = "s_axi_aclk", "clk";
+                xlnx,pixels-per-clock = <1>;
+            };
+            lcd_vdma: dma@43000000 {
+                compatible = "xlnx,axi-vdma-1.00.a";
+                reg = <0x43000000 0x10000>;
+                #dma-cells = <1>;
+                xlnx,addrwidth = <32>;
+                xlnx,num-fstores = <1>;
+                xlnx,flush-fsync = <1>;
+                clocks = <&clkc 15>, <&clkc 16>, <&clkc 16>;
+                clock-names = "s_axi_lite_aclk", "m_axi_mm2s_aclk", "m_axis_mm2s_aclk";
+                interrupt-parent = <&intc>;
+                dma-channel@43000000 {
+                    compatible = "xlnx,axi-vdma-mm2s-channel";
+                    interrupts = <0 30 4>;
+                    xlnx,datawidth = <32>;
+                    xlnx,include-dre;
+                };
+            };
+            lcd_encoder {
+                compatible = "ax-drm-encoder";
+                clocks = <&lcd_dynclk>;
+                clock-names = "clk";
+                #address-cells = <1>;
+                #size-cells = <0>;
+                port@0 {
+                    reg = <0>;
+                    lcd_encoder_ep: endpoint { remote-endpoint = <&lcd_display_ep>; };
+                };
+            };
+            lcd_display {
+                compatible = "xlnx,pl-disp";
+                dmas = <&lcd_vdma 0>;
+                dma-names = "dma0";
+                xlnx,vformat = "AR24";
+                xlnx,bridge = <&lcd_vtc>;
+                #address-cells = <1>;
+                #size-cells = <0>;
+                port@0 {
+                    reg = <0>;
+                    lcd_display_ep: endpoint { remote-endpoint = <&lcd_encoder_ep>; };
+                };
+            };
+        };
+    };
+};

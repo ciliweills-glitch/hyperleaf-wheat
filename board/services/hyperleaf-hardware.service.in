@@ -1,0 +1,18 @@
+[Unit]
+Description=HyperLeaf Original four-layer AX7020 LCD hardware
+After=systemd-modules-load.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+Environment=XILINX_XRT=/usr
+WorkingDirectory=@PROJECT_ROOT@/fpga/overlay/ax7020_cnn_lcd_drc_20261016
+ExecStartPre=/sbin/modprobe zocl
+ExecStart=/usr/local/share/pynq-venv/bin/python3 -u program_combined_overlay.py --bit @PROJECT_ROOT@/fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax7020_cnn.bit
+ExecStart=/bin/sh load_linux_drivers.sh
+ExecStop=/bin/sh unload_linux_drivers.sh
+TimeoutStartSec=90
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

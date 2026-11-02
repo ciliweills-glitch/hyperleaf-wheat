@@ -1,0 +1,2597 @@
+{
+  "date": "2026-10-28",
+  "model": "Original four-layer CNNMask",
+  "interface_version": "0x00010004",
+  "board": "AX7020 xc7z020clg400-2 1GB",
+  "source_branch": "main",
+  "source_commit": "1583a68",
+  "released_ip": "ax7020_cnn_lcd_drc_20261016/cnn_axis_accel_ip.zip",
+  "board_configuration": "exported from deployed Vivado project, not reconstructed from vendor defaults",
+  "files": [
+    {
+      "file": ".gitattributes",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 97
+    },
+    {
+      "file": ".gitignore",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 81
+    },
+    {
+      "file": "model/original_2dcnnmask/artifacts_int16/calibration.json",
+      "source": "main/model/original_2dcnnmask/artifacts_int16/calibration.json",
+      "bytes": 534
+    },
+    {
+      "file": "model/original_2dcnnmask/artifacts_int16/compare_10samples.csv",
+      "source": "main/model/original_2dcnnmask/artifacts_int16/compare_10samples.csv",
+      "bytes": 804
+    },
+    {
+      "file": "model/original_2dcnnmask/artifacts_int16/metrics.json",
+      "source": "main/model/original_2dcnnmask/artifacts_int16/metrics.json",
+      "bytes": 680
+    },
+    {
+      "file": "model/original_2dcnnmask/artifacts_int16/quant_params.npz",
+      "source": "main/model/original_2dcnnmask/artifacts_int16/quant_params.npz",
+      "bytes": 740186
+    },
+    {
+      "file": "model/original_2dcnnmask/artifacts_int16/test_predictions_int16_full.csv",
+      "source": "main/model/original_2dcnnmask/artifacts_int16/test_predictions_int16_full.csv",
+      "bytes": 36919
+    },
+    {
+      "file": "model/original_2dcnnmask/checkpoint/best.pt",
+      "source": "main/model/original_2dcnnmask/checkpoint/best.pt",
+      "bytes": 1418857
+    },
+    {
+      "file": "model/original_2dcnnmask/checkpoint/best_folded.pt",
+      "source": "main/model/original_2dcnnmask/checkpoint/best_folded.pt",
+      "bytes": 1411015
+    },
+    {
+      "file": "model/original_2dcnnmask/export_fpga_fp32.py",
+      "source": "main/model/original_2dcnnmask/export_fpga_fp32.py",
+      "bytes": 5617
+    },
+    {
+      "file": "model/original_2dcnnmask/export_int16_weights.py",
+      "source": "main/model/original_2dcnnmask/export_int16_weights.py",
+      "bytes": 15909
+    },
+    {
+      "file": "model/original_2dcnnmask/fold_bn.py",
+      "source": "main/model/original_2dcnnmask/fold_bn.py",
+      "bytes": 2776
+    },
+    {
+      "file": "model/original_2dcnnmask/inference.py",
+      "source": "main/model/original_2dcnnmask/inference.py",
+      "bytes": 4132
+    },
+    {
+      "file": "model/original_2dcnnmask/masked_2d_cnn.py",
+      "source": "main/model/original_2dcnnmask/masked_2d_cnn.py",
+      "bytes": 2017
+    },
+    {
+      "file": "model/original_2dcnnmask/preprocess.py",
+      "source": "main/model/original_2dcnnmask/preprocess.py",
+      "bytes": 2084
+    },
+    {
+      "file": "model/original_2dcnnmask/quantize_int16.py",
+      "source": "main/model/original_2dcnnmask/quantize_int16.py",
+      "bytes": 9878
+    },
+    {
+      "file": "model/original_2dcnnmask/run_metadata/config.json",
+      "source": "main/model/original_2dcnnmask/run_metadata/config.json",
+      "bytes": 11354
+    },
+    {
+      "file": "model/original_2dcnnmask/run_metadata/history.csv",
+      "source": "main/model/original_2dcnnmask/run_metadata/history.csv",
+      "bytes": 5687
+    },
+    {
+      "file": "model/original_2dcnnmask/run_metadata/loss_curve.png",
+      "source": "main/model/original_2dcnnmask/run_metadata/loss_curve.png",
+      "bytes": 95740
+    },
+    {
+      "file": "model/original_2dcnnmask/run_metadata/normalization.json",
+      "source": "main/model/original_2dcnnmask/run_metadata/normalization.json",
+      "bytes": 8991
+    },
+    {
+      "file": "model/original_2dcnnmask/run_metadata/splits_used.csv",
+      "source": "main/model/original_2dcnnmask/run_metadata/splits_used.csv",
+      "bytes": 30477
+    },
+    {
+      "file": "model/original_2dcnnmask/run_metadata/summary.csv",
+      "source": "main/model/original_2dcnnmask/run_metadata/summary.csv",
+      "bytes": 306
+    },
+    {
+      "file": "model/original_2dcnnmask/run_metadata/test_predictions.csv",
+      "source": "main/model/original_2dcnnmask/run_metadata/test_predictions.csv",
+      "bytes": 12749
+    },
+    {
+      "file": "model/original_2dcnnmask/run_metadata/train_predictions.csv",
+      "source": "main/model/original_2dcnnmask/run_metadata/train_predictions.csv",
+      "bytes": 45754
+    },
+    {
+      "file": "model/original_2dcnnmask/run_metadata/val_predictions.csv",
+      "source": "main/model/original_2dcnnmask/run_metadata/val_predictions.csv",
+      "bytes": 5116
+    },
+    {
+      "file": "model/original_2dcnnmask/source.md",
+      "source": "main/model/original_2dcnnmask/source.md",
+      "bytes": 2633
+    },
+    {
+      "file": "model/original_2dcnnmask/verify_folded.py",
+      "source": "main/model/original_2dcnnmask/verify_folded.py",
+      "bytes": 3891
+    },
+    {
+      "file": "data_contract/formal_split_seed42.csv",
+      "source": "main/data_contract/formal_split_seed42.csv",
+      "bytes": 30477
+    },
+    {
+      "file": "data_contract/test_stress400_seed42.csv",
+      "source": "main/data_contract/test_stress400_seed42.csv",
+      "bytes": 10332
+    },
+    {
+      "file": "golden/fp32_repro_check.csv",
+      "source": "main/golden/fp32_repro_check.csv",
+      "bytes": 974
+    },
+    {
+      "file": "golden/int16_ptq/00001/c1.f32ref.npy",
+      "source": "main/golden/int16_ptq/00001/c1.f32ref.npy",
+      "bytes": 2162816
+    },
+    {
+      "file": "golden/int16_ptq/00001/c1.int16.npy",
+      "source": "main/golden/int16_ptq/00001/c1.int16.npy",
+      "bytes": 1081472
+    },
+    {
+      "file": "golden/int16_ptq/00001/c2.f32ref.npy",
+      "source": "main/golden/int16_ptq/00001/c2.f32ref.npy",
+      "bytes": 540800
+    },
+    {
+      "file": "golden/int16_ptq/00001/c2.int16.npy",
+      "source": "main/golden/int16_ptq/00001/c2.int16.npy",
+      "bytes": 270464
+    },
+    {
+      "file": "golden/int16_ptq/00001/c3.f32ref.npy",
+      "source": "main/golden/int16_ptq/00001/c3.f32ref.npy",
+      "bytes": 270464
+    },
+    {
+      "file": "golden/int16_ptq/00001/c3.int16.npy",
+      "source": "main/golden/int16_ptq/00001/c3.int16.npy",
+      "bytes": 135296
+    },
+    {
+      "file": "golden/int16_ptq/00001/c4.f32ref.npy",
+      "source": "main/golden/int16_ptq/00001/c4.f32ref.npy",
+      "bytes": 84608
+    },
+    {
+      "file": "golden/int16_ptq/00001/c4.int16.npy",
+      "source": "main/golden/int16_ptq/00001/c4.int16.npy",
+      "bytes": 42368
+    },
+    {
+      "file": "golden/int16_ptq/00001/gap.f32ref.npy",
+      "source": "main/golden/int16_ptq/00001/gap.f32ref.npy",
+      "bytes": 768
+    },
+    {
+      "file": "golden/int16_ptq/00001/gap.int16.npy",
+      "source": "main/golden/int16_ptq/00001/gap.int16.npy",
+      "bytes": 448
+    },
+    {
+      "file": "golden/int16_ptq/00001/input.f32ref.npy",
+      "source": "main/golden/int16_ptq/00001/input.f32ref.npy",
+      "bytes": 13854848
+    },
+    {
+      "file": "golden/int16_ptq/00001/input.int16.npy",
+      "source": "main/golden/int16_ptq/00001/input.int16.npy",
+      "bytes": 6927488
+    },
+    {
+      "file": "golden/int16_ptq/00001/layer_scales.json",
+      "source": "main/golden/int16_ptq/00001/layer_scales.json",
+      "bytes": 323
+    },
+    {
+      "file": "golden/int16_ptq/00001/pool_after_1.f32ref.npy",
+      "source": "main/golden/int16_ptq/00001/pool_after_1.f32ref.npy",
+      "bytes": 270464
+    },
+    {
+      "file": "golden/int16_ptq/00001/pool_after_1.int16.npy",
+      "source": "main/golden/int16_ptq/00001/pool_after_1.int16.npy",
+      "bytes": 135296
+    },
+    {
+      "file": "golden/int16_ptq/00001/pool_after_2.f32ref.npy",
+      "source": "main/golden/int16_ptq/00001/pool_after_2.f32ref.npy",
+      "bytes": 135296
+    },
+    {
+      "file": "golden/int16_ptq/00001/pool_after_2.int16.npy",
+      "source": "main/golden/int16_ptq/00001/pool_after_2.int16.npy",
+      "bytes": 67712
+    },
+    {
+      "file": "golden/int16_ptq/00001/pool_after_3.f32ref.npy",
+      "source": "main/golden/int16_ptq/00001/pool_after_3.f32ref.npy",
+      "bytes": 67712
+    },
+    {
+      "file": "golden/int16_ptq/00001/pool_after_3.int16.npy",
+      "source": "main/golden/int16_ptq/00001/pool_after_3.int16.npy",
+      "bytes": 33920
+    },
+    {
+      "file": "golden/int16_ptq/golden_10samples.csv",
+      "source": "main/golden/int16_ptq/golden_10samples.csv",
+      "bytes": 703
+    },
+    {
+      "file": "golden/int16_ptq/int16_spec.md",
+      "source": "main/golden/int16_ptq/int16_spec.md",
+      "bytes": 6982
+    },
+    {
+      "file": "golden/int16_ptq/scales.json",
+      "source": "main/golden/int16_ptq/scales.json",
+      "bytes": 199
+    },
+    {
+      "file": "golden/int16_ptq/weights/conv1_b.f32.bin",
+      "source": "main/golden/int16_ptq/weights/conv1_b.f32.bin",
+      "bytes": 128
+    },
+    {
+      "file": "golden/int16_ptq/weights/conv1_w.int16.bin",
+      "source": "main/golden/int16_ptq/weights/conv1_w.int16.bin",
+      "bytes": 118080
+    },
+    {
+      "file": "golden/int16_ptq/weights/conv1_w_scale.f32.bin",
+      "source": "main/golden/int16_ptq/weights/conv1_w_scale.f32.bin",
+      "bytes": 128
+    },
+    {
+      "file": "golden/int16_ptq/weights/conv2_b.f32.bin",
+      "source": "main/golden/int16_ptq/weights/conv2_b.f32.bin",
+      "bytes": 256
+    },
+    {
+      "file": "golden/int16_ptq/weights/conv2_w.int16.bin",
+      "source": "main/golden/int16_ptq/weights/conv2_w.int16.bin",
+      "bytes": 36864
+    },
+    {
+      "file": "golden/int16_ptq/weights/conv2_w_scale.f32.bin",
+      "source": "main/golden/int16_ptq/weights/conv2_w_scale.f32.bin",
+      "bytes": 256
+    },
+    {
+      "file": "golden/int16_ptq/weights/conv3_b.f32.bin",
+      "source": "main/golden/int16_ptq/weights/conv3_b.f32.bin",
+      "bytes": 512
+    },
+    {
+      "file": "golden/int16_ptq/weights/conv3_w.int16.bin",
+      "source": "main/golden/int16_ptq/weights/conv3_w.int16.bin",
+      "bytes": 147456
+    },
+    {
+      "file": "golden/int16_ptq/weights/conv3_w_scale.f32.bin",
+      "source": "main/golden/int16_ptq/weights/conv3_w_scale.f32.bin",
+      "bytes": 512
+    },
+    {
+      "file": "golden/int16_ptq/weights/conv4_b.f32.bin",
+      "source": "main/golden/int16_ptq/weights/conv4_b.f32.bin",
+      "bytes": 640
+    },
+    {
+      "file": "golden/int16_ptq/weights/conv4_w.int16.bin",
+      "source": "main/golden/int16_ptq/weights/conv4_w.int16.bin",
+      "bytes": 368640
+    },
+    {
+      "file": "golden/int16_ptq/weights/conv4_w_scale.f32.bin",
+      "source": "main/golden/int16_ptq/weights/conv4_w_scale.f32.bin",
+      "bytes": 640
+    },
+    {
+      "file": "golden/int16_ptq/weights/head_fc1_b.f32.bin",
+      "source": "main/golden/int16_ptq/weights/head_fc1_b.f32.bin",
+      "bytes": 384
+    },
+    {
+      "file": "golden/int16_ptq/weights/head_fc1_w.f32.bin",
+      "source": "main/golden/int16_ptq/weights/head_fc1_w.f32.bin",
+      "bytes": 61440
+    },
+    {
+      "file": "golden/int16_ptq/weights/head_fc2_b.f32.bin",
+      "source": "main/golden/int16_ptq/weights/head_fc2_b.f32.bin",
+      "bytes": 4
+    },
+    {
+      "file": "golden/int16_ptq/weights/head_fc2_w.f32.bin",
+      "source": "main/golden/int16_ptq/weights/head_fc2_w.f32.bin",
+      "bytes": 384
+    },
+    {
+      "file": "fpga/int16_ref/int16_ops.py",
+      "source": "main/fpga/int16_ref/int16_ops.py",
+      "bytes": 2877
+    },
+    {
+      "file": "fpga/int16_ref/int16_runner.py",
+      "source": "main/fpga/int16_ref/int16_runner.py",
+      "bytes": 3659
+    },
+    {
+      "file": "fpga/int16_ref/README.md",
+      "source": "main/fpga/int16_ref/README.md",
+      "bytes": 1216
+    },
+    {
+      "file": "fpga/linux/lcd_touch/ax-lcd-drv.c",
+      "source": "main/fpga/linux/lcd_touch/ax-lcd-drv.c",
+      "bytes": 18505
+    },
+    {
+      "file": "fpga/linux/lcd_touch/ax-touchscreen-drv.c",
+      "source": "main/fpga/linux/lcd_touch/ax-touchscreen-drv.c",
+      "bytes": 16821
+    },
+    {
+      "file": "fpga/linux/lcd_touch/ax7020_lcd.dtbo",
+      "source": "main/fpga/linux/lcd_touch/ax7020_lcd.dtbo",
+      "bytes": 3196
+    },
+    {
+      "file": "fpga/linux/lcd_touch/ax7020_lcd.dtso",
+      "source": "main/fpga/linux/lcd_touch/ax7020_lcd.dtso",
+      "bytes": 2892
+    },
+    {
+      "file": "fpga/linux/lcd_touch/ax_bridge.ko",
+      "source": "main/fpga/linux/lcd_touch/ax_bridge.ko",
+      "bytes": 10980
+    },
+    {
+      "file": "fpga/linux/lcd_touch/ax_dynclk.ko",
+      "source": "main/fpga/linux/lcd_touch/ax_dynclk.ko",
+      "bytes": 11332
+    },
+    {
+      "file": "fpga/linux/lcd_touch/ax_lcd_encoder.ko",
+      "source": "main/fpga/linux/lcd_touch/ax_lcd_encoder.ko",
+      "bytes": 14408
+    },
+    {
+      "file": "fpga/linux/lcd_touch/ax_pl_display.ko",
+      "source": "main/fpga/linux/lcd_touch/ax_pl_display.ko",
+      "bytes": 16728
+    },
+    {
+      "file": "fpga/linux/lcd_touch/ax_touchscreen.ko",
+      "source": "main/fpga/linux/lcd_touch/ax_touchscreen.ko",
+      "bytes": 15564
+    },
+    {
+      "file": "fpga/linux/lcd_touch/ax_vtc.ko",
+      "source": "main/fpga/linux/lcd_touch/ax_vtc.ko",
+      "bytes": 10644
+    },
+    {
+      "file": "fpga/linux/lcd_touch/clk-dglnt-dynclk.c",
+      "source": "main/fpga/linux/lcd_touch/clk-dglnt-dynclk.c",
+      "bytes": 14709
+    },
+    {
+      "file": "fpga/linux/lcd_touch/Kconfig",
+      "source": "main/fpga/linux/lcd_touch/Kconfig",
+      "bytes": 5041
+    },
+    {
+      "file": "fpga/linux/lcd_touch/kms_touch_demo",
+      "source": "main/fpga/linux/lcd_touch/kms_touch_demo",
+      "bytes": 13752
+    },
+    {
+      "file": "fpga/linux/lcd_touch/kms_touch_demo.c",
+      "source": "main/fpga/linux/lcd_touch/kms_touch_demo.c",
+      "bytes": 25455
+    },
+    {
+      "file": "fpga/linux/lcd_touch/load_linux_drivers.sh",
+      "source": "main/fpga/linux/lcd_touch/load_linux_drivers.sh",
+      "bytes": 619
+    },
+    {
+      "file": "fpga/linux/lcd_touch/Makefile",
+      "source": "main/fpga/linux/lcd_touch/Makefile",
+      "bytes": 326
+    },
+    {
+      "file": "fpga/linux/lcd_touch/program_combined_overlay.py",
+      "source": "main/fpga/linux/lcd_touch/program_combined_overlay.py",
+      "bytes": 491
+    },
+    {
+      "file": "fpga/linux/lcd_touch/README.md",
+      "source": "main/fpga/linux/lcd_touch/README.md",
+      "bytes": 641
+    },
+    {
+      "file": "fpga/linux/lcd_touch/unload_linux_drivers.sh",
+      "source": "main/fpga/linux/lcd_touch/unload_linux_drivers.sh",
+      "bytes": 448
+    },
+    {
+      "file": "fpga/linux/lcd_touch/xlnx_bridge.c",
+      "source": "main/fpga/linux/lcd_touch/xlnx_bridge.c",
+      "bytes": 13031
+    },
+    {
+      "file": "fpga/linux/lcd_touch/xlnx_bridge.h",
+      "source": "main/fpga/linux/lcd_touch/xlnx_bridge.h",
+      "bytes": 4718
+    },
+    {
+      "file": "fpga/linux/lcd_touch/xlnx_crtc.h",
+      "source": "main/fpga/linux/lcd_touch/xlnx_crtc.h",
+      "bytes": 2678
+    },
+    {
+      "file": "fpga/linux/lcd_touch/xlnx_drv.h",
+      "source": "main/fpga/linux/lcd_touch/xlnx_drv.h",
+      "bytes": 1143
+    },
+    {
+      "file": "fpga/linux/lcd_touch/xlnx_pl_disp.c",
+      "source": "main/fpga/linux/lcd_touch/xlnx_pl_disp.c",
+      "bytes": 19286
+    },
+    {
+      "file": "fpga/linux/lcd_touch/xlnx_vtc.c",
+      "source": "main/fpga/linux/lcd_touch/xlnx_vtc.c",
+      "bytes": 12142
+    },
+    {
+      "file": "fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax7020_cnn.bit",
+      "source": "main/fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax7020_cnn.bit",
+      "bytes": 2387093
+    },
+    {
+      "file": "fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax7020_cnn.hwh",
+      "source": "main/fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax7020_cnn.hwh",
+      "bytes": 538746
+    },
+    {
+      "file": "fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax7020_cnn_lcd_drc.xsa",
+      "source": "main/fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax7020_cnn_lcd_drc.xsa",
+      "bytes": 867726
+    },
+    {
+      "file": "fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax7020_lcd.dtbo",
+      "source": "main/fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax7020_lcd.dtbo",
+      "bytes": 3196
+    },
+    {
+      "file": "fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax_bridge.ko",
+      "source": "main/fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax_bridge.ko",
+      "bytes": 10980
+    },
+    {
+      "file": "fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax_dynclk.ko",
+      "source": "main/fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax_dynclk.ko",
+      "bytes": 11332
+    },
+    {
+      "file": "fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax_lcd_encoder.ko",
+      "source": "main/fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax_lcd_encoder.ko",
+      "bytes": 14408
+    },
+    {
+      "file": "fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax_pl_display.ko",
+      "source": "main/fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax_pl_display.ko",
+      "bytes": 16728
+    },
+    {
+      "file": "fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax_touchscreen.ko",
+      "source": "main/fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax_touchscreen.ko",
+      "bytes": 15564
+    },
+    {
+      "file": "fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax_vtc.ko",
+      "source": "main/fpga/overlay/ax7020_cnn_lcd_drc_20261016/ax_vtc.ko",
+      "bytes": 10644
+    },
+    {
+      "file": "fpga/overlay/ax7020_cnn_lcd_drc_20261016/cnn_axis_accel_ip.zip",
+      "source": "main/fpga/overlay/ax7020_cnn_lcd_drc_20261016/cnn_axis_accel_ip.zip",
+      "bytes": 47406
+    },
+    {
+      "file": "fpga/overlay/ax7020_cnn_lcd_drc_20261016/load_linux_drivers.sh",
+      "source": "main/fpga/overlay/ax7020_cnn_lcd_drc_20261016/load_linux_drivers.sh",
+      "bytes": 619
+    },
+    {
+      "file": "fpga/overlay/ax7020_cnn_lcd_drc_20261016/program_combined_overlay.py",
+      "source": "main/fpga/overlay/ax7020_cnn_lcd_drc_20261016/program_combined_overlay.py",
+      "bytes": 491
+    },
+    {
+      "file": "fpga/overlay/ax7020_cnn_lcd_drc_20261016/README.md",
+      "source": "main/fpga/overlay/ax7020_cnn_lcd_drc_20261016/README.md",
+      "bytes": 866
+    },
+    {
+      "file": "fpga/overlay/ax7020_cnn_lcd_drc_20261016/unload_linux_drivers.sh",
+      "source": "main/fpga/overlay/ax7020_cnn_lcd_drc_20261016/unload_linux_drivers.sh",
+      "bytes": 448
+    },
+    {
+      "file": "fpga/overlay/bench_10_pl_http.py",
+      "source": "main/fpga/overlay/bench_10_pl_http.py",
+      "bytes": 9210
+    },
+    {
+      "file": "fpga/overlay/bench_10_software.py",
+      "source": "main/fpga/overlay/bench_10_software.py",
+      "bytes": 5077
+    },
+    {
+      "file": "fpga/overlay/board_tiff_replay.py",
+      "source": "main/fpga/overlay/board_tiff_replay.py",
+      "bytes": 3840,
+      "updated": "2026-10-29 board retest documentation or replay instrumentation"
+    },
+    {
+      "file": "fpga/overlay/check_fixed_preprocessing.py",
+      "source": "main/fpga/overlay/check_fixed_preprocessing.py",
+      "bytes": 9944
+    },
+    {
+      "file": "fpga/overlay/check_gpu_int16_layers.py",
+      "source": "main/fpga/overlay/check_gpu_int16_layers.py",
+      "bytes": 2734
+    },
+    {
+      "file": "fpga/overlay/check_integer_chain.py",
+      "source": "main/fpga/overlay/check_integer_chain.py",
+      "bytes": 1676
+    },
+    {
+      "file": "fpga/overlay/check_raw_driver.py",
+      "source": "main/fpga/overlay/check_raw_driver.py",
+      "bytes": 4090
+    },
+    {
+      "file": "fpga/overlay/check_raw_preprocessing.py",
+      "source": "main/fpga/overlay/check_raw_preprocessing.py",
+      "bytes": 5260
+    },
+    {
+      "file": "fpga/overlay/cnn_contract.py",
+      "source": "main/fpga/overlay/cnn_contract.py",
+      "bytes": 5761
+    },
+    {
+      "file": "fpga/overlay/fixed_preprocess.py",
+      "source": "main/fpga/overlay/fixed_preprocess.py",
+      "bytes": 5006
+    },
+    {
+      "file": "fpga/overlay/pynq_cnn.py",
+      "source": "main/fpga/overlay/pynq_cnn.py",
+      "bytes": 11106
+    },
+    {
+      "file": "fpga/overlay/send_tiff.py",
+      "source": "main/fpga/overlay/send_tiff.py",
+      "bytes": 966
+    },
+    {
+      "file": "fpga/overlay/serve_tiff.py",
+      "source": "main/fpga/overlay/serve_tiff.py",
+      "bytes": 10085
+    },
+    {
+      "file": "fpga/overlay/tiff_int16.py",
+      "source": "main/fpga/overlay/tiff_int16.py",
+      "bytes": 3878
+    },
+    {
+      "file": "fpga/rtl/axil_regs.v",
+      "source": "released cnn_axis_accel_ip.zip/src/axil_regs.v",
+      "bytes": 2929
+    },
+    {
+      "file": "fpga/rtl/cnn_axis_accel.v",
+      "source": "released cnn_axis_accel_ip.zip/src/cnn_axis_accel.v",
+      "bytes": 7775
+    },
+    {
+      "file": "fpga/rtl/cnn_tile_core.v",
+      "source": "released cnn_axis_accel_ip.zip/src/cnn_tile_core.v",
+      "bytes": 14084
+    },
+    {
+      "file": "fpga/rtl/pe_array.v",
+      "source": "released cnn_axis_accel_ip.zip/src/pe_array.v",
+      "bytes": 4684
+    },
+    {
+      "file": "fpga/rtl/preprocess_rom/coefficients.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/coefficients.mem",
+      "bytes": 4488
+    },
+    {
+      "file": "fpga/rtl/preprocess_rom/correction_bank_0.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_0.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "fpga/rtl/preprocess_rom/correction_bank_1.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_1.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "fpga/rtl/preprocess_rom/correction_bank_2.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_2.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "fpga/rtl/preprocess_rom/correction_bank_3.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_3.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "fpga/rtl/preprocess_rom/correction_bank_4.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_4.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "fpga/rtl/preprocess_rom/correction_bank_5.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_5.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "fpga/rtl/preprocess_rom/correction_bank_6.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_6.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "fpga/rtl/preprocess_rom/correction_bank_7.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_7.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "fpga/rtl/preprocess_rom/correction_bank_8.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_8.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "fpga/rtl/preprocess_rom/correction_directory.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_directory.mem",
+      "bytes": 91392
+    },
+    {
+      "file": "fpga/rtl/raw_tile_preprocess.v",
+      "source": "released cnn_axis_accel_ip.zip/src/raw_tile_preprocess.v",
+      "bytes": 5286
+    },
+    {
+      "file": "fpga/rtl/requant_pipe.v",
+      "source": "released cnn_axis_accel_ip.zip/src/requant_pipe.v",
+      "bytes": 2877
+    },
+    {
+      "file": "fpga/rtl/standardize_mac.v",
+      "source": "released cnn_axis_accel_ip.zip/src/standardize_mac.v",
+      "bytes": 3850
+    },
+    {
+      "file": "fpga/rtl/tb_cnn_axis_accel.v",
+      "source": "main/fpga/rtl/tb_cnn_axis_accel.v",
+      "bytes": 11634
+    },
+    {
+      "file": "fpga/rtl/tb_cnn_queue.v",
+      "source": "main/fpga/rtl/tb_cnn_queue.v",
+      "bytes": 11436
+    },
+    {
+      "file": "fpga/rtl/tb_raw_tile_preprocess.v",
+      "source": "main/fpga/rtl/tb_raw_tile_preprocess.v",
+      "bytes": 5655
+    },
+    {
+      "file": "fpga/rtl/tb_release.sv",
+      "source": "main/fpga/vivado/build/drc_repair_20261016/sim_prefetch/tb.sv",
+      "bytes": 12065
+    },
+    {
+      "file": "fpga/rtl/tb_requant_pipe.v",
+      "source": "main/fpga/rtl/tb_requant_pipe.v",
+      "bytes": 2239
+    },
+    {
+      "file": "fpga/rtl/tb_standardize_mac.v",
+      "source": "main/fpga/rtl/tb_standardize_mac.v",
+      "bytes": 3906
+    },
+    {
+      "file": "fpga/rtl/tb_tiff_preprocess_lane.v",
+      "source": "main/fpga/rtl/tb_tiff_preprocess_lane.v",
+      "bytes": 6373
+    },
+    {
+      "file": "fpga/rtl/tiff_preprocess_lane.v",
+      "source": "released cnn_axis_accel_ip.zip/src/tiff_preprocess_lane.v",
+      "bytes": 4459
+    },
+    {
+      "file": "ui/screen/assets/count_cards.argb.gz",
+      "source": "main/ui/screen/assets/count_cards.argb.gz",
+      "bytes": 852135
+    },
+    {
+      "file": "ui/screen/assets/hyperleafsans.ttf",
+      "source": "main/ui/screen/assets/hyperleafsans.ttf",
+      "bytes": 85212
+    },
+    {
+      "file": "ui/screen/assets/hyperspectral_wheat_icon_48.png",
+      "source": "main/ui/screen/assets/hyperspectral_wheat_icon_48.png",
+      "bytes": 1779664
+    },
+    {
+      "file": "ui/screen/assets/ofl.txt",
+      "source": "main/ui/screen/assets/ofl.txt",
+      "bytes": 4388
+    },
+    {
+      "file": "ui/screen/build_count_cards.py",
+      "source": "main/ui/screen/build_count_cards.py",
+      "bytes": 1211
+    },
+    {
+      "file": "ui/screen/classification.py",
+      "source": "main/ui/screen/classification.py",
+      "bytes": 616
+    },
+    {
+      "file": "ui/screen/controller.py",
+      "source": "main/ui/screen/controller.py",
+      "bytes": 28682
+    },
+    {
+      "file": "ui/screen/kms_screen",
+      "source": "main/ui/screen/kms_screen",
+      "bytes": 24016
+    },
+    {
+      "file": "ui/screen/pc_uart_sender.py",
+      "source": "main/ui/screen/pc_uart_sender.py",
+      "bytes": 8019
+    },
+    {
+      "file": "ui/screen/README.md",
+      "source": "main/ui/screen/README.md",
+      "bytes": 1174
+    },
+    {
+      "file": "ui/screen/send_tiff.py",
+      "source": "main/ui/screen/send_tiff.py",
+      "bytes": 1543
+    },
+    {
+      "file": "ui/screen/systemd/eth0_hyperleaf",
+      "source": "main/ui/screen/systemd/eth0_hyperleaf",
+      "bytes": 164
+    },
+    {
+      "file": "ui/screen/systemd/README.md",
+      "source": "main/ui/screen/systemd/README.md",
+      "bytes": 181
+    },
+    {
+      "file": "ui/screen/systemd/wait_port.py",
+      "source": "main/ui/screen/systemd/wait_port.py",
+      "bytes": 341
+    },
+    {
+      "file": "ui/screen/uploader.html",
+      "source": "main/ui/screen/uploader.html",
+      "bytes": 4391
+    },
+    {
+      "file": "ui/screen/views.py",
+      "source": "main/ui/screen/views.py",
+      "bytes": 27562
+    },
+    {
+      "file": "board/ax7020/ax7020_cnn_lcd_bd.tcl",
+      "source": "Vivado 2024.1 deployed ax7020_cnn_lcd_drc_20261016 project",
+      "bytes": 47495
+    },
+    {
+      "file": "board/ax7020/cnn.bd",
+      "source": "Vivado 2024.1 deployed ax7020_cnn_lcd_drc_20261016 project",
+      "bytes": 122791
+    },
+    {
+      "file": "board/ax7020/lcd7.xdc",
+      "source": "ALINX/course_s4_linux/08_lcd_touch/src/constraints/lcd7.xdc",
+      "bytes": 6673
+    },
+    {
+      "file": "board/ax7020/repair_netlist.tcl",
+      "source": "main/fpga/reports/drc_repair_20261016/repair_netlist.tcl",
+      "bytes": 3408
+    },
+    {
+      "file": "board/ax7020/system.xdc",
+      "source": "ALINX/course_s4_linux/09_sg_dma_test/src/constraints/system.xdc",
+      "bytes": 154
+    },
+    {
+      "file": "board/ax7020/vendor_ps_config_reference.tcl",
+      "source": "ALINX/course_s4_linux/09_sg_dma_test/ps_config.tcl (reference only; frozen BD is authoritative)",
+      "bytes": 25988
+    },
+    {
+      "file": "board/services/hyperleaf-cnn.service.in",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 780
+    },
+    {
+      "file": "board/services/hyperleaf-controller.service.in",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 466
+    },
+    {
+      "file": "board/services/hyperleaf-display.service.in",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 412
+    },
+    {
+      "file": "board/services/hyperleaf-hardware.service.in",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 601
+    },
+    {
+      "file": "build.tcl",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 2781
+    },
+    {
+      "file": "data/demo_samples.json",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 434
+    },
+    {
+      "file": "data/integer_chain_10samples.csv",
+      "source": "main/fpga/reports/integer_chain_10samples.csv",
+      "bytes": 720
+    },
+    {
+      "file": "data/stress400_order.json",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 16424
+    },
+    {
+      "file": "data/test482_manifest.csv",
+      "source": "root/test482/test_manifest.csv",
+      "bytes": 19578
+    },
+    {
+      "file": "docs/build.md",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 2859,
+      "updated": "2026-10-28 local reproduction and Skill documentation"
+    },
+    {
+      "file": "docs/environment.md",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 2446
+    },
+    {
+      "file": "docs/results.md",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 4676,
+      "updated": "2026-10-29 board retest documentation or replay instrumentation"
+    },
+    {
+      "file": "docs/run.md",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 5071,
+      "updated": "2026-10-29 board retest documentation or replay instrumentation"
+    },
+    {
+      "file": "evidence/autostart_20261018/after_reboot.log",
+      "source": "main/fpga/reports/autostart_20261018/after_reboot.log",
+      "bytes": 1317
+    },
+    {
+      "file": "evidence/autostart_20261018/before_reboot.log",
+      "source": "main/fpga/reports/autostart_20261018/before_reboot.log",
+      "bytes": 70
+    },
+    {
+      "file": "evidence/autostart_20261018/boot_timing.log",
+      "source": "main/fpga/reports/autostart_20261018/boot_timing.log",
+      "bytes": 4738
+    },
+    {
+      "file": "evidence/autostart_20261018/coldboot.log",
+      "source": "main/fpga/reports/autostart_20261018/coldboot.log",
+      "bytes": 911
+    },
+    {
+      "file": "evidence/autostart_20261018/coldboot_batch_summary.json",
+      "source": "main/fpga/reports/autostart_20261018/coldboot_batch_summary.json",
+      "bytes": 223
+    },
+    {
+      "file": "evidence/autostart_20261018/final_health.log",
+      "source": "main/fpga/reports/autostart_20261018/final_health.log",
+      "bytes": 306
+    },
+    {
+      "file": "evidence/autostart_20261018/first_start.log",
+      "source": "main/fpga/reports/autostart_20261018/first_start.log",
+      "bytes": 1510
+    },
+    {
+      "file": "evidence/autostart_20261018/install.log",
+      "source": "main/fpga/reports/autostart_20261018/install.log",
+      "bytes": 798
+    },
+    {
+      "file": "evidence/autostart_20261018/pc_batch.jsonl",
+      "source": "main/fpga/reports/autostart_20261018/pc_batch.jsonl",
+      "bytes": 47810
+    },
+    {
+      "file": "evidence/autostart_20261018/README.md",
+      "source": "main/fpga/reports/autostart_20261018/README.md",
+      "bytes": 1136
+    },
+    {
+      "file": "evidence/autostart_20261018/services_final.log",
+      "source": "main/fpga/reports/autostart_20261018/services_final.log",
+      "bytes": 635
+    },
+    {
+      "file": "evidence/autostart_20261018/status_live.json",
+      "source": "main/fpga/reports/autostart_20261018/status_live.json",
+      "bytes": 6802
+    },
+    {
+      "file": "evidence/autostart_20261018/stop_manual.log",
+      "source": "main/fpga/reports/autostart_20261018/stop_manual.log",
+      "bytes": 110
+    },
+    {
+      "file": "evidence/board_deploy_20261018/batch_summary.json",
+      "source": "main/fpga/reports/board_deploy_20261018/batch_summary.json",
+      "bytes": 321
+    },
+    {
+      "file": "evidence/board_deploy_20261018/batches_final.json",
+      "source": "main/fpga/reports/board_deploy_20261018/batches_final.json",
+      "bytes": 340270
+    },
+    {
+      "file": "evidence/board_deploy_20261018/compile.log",
+      "source": "main/fpga/reports/board_deploy_20261018/compile.log",
+      "bytes": 0
+    },
+    {
+      "file": "evidence/board_deploy_20261018/drivers.log",
+      "source": "main/fpga/reports/board_deploy_20261018/drivers.log",
+      "bytes": 86
+    },
+    {
+      "file": "evidence/board_deploy_20261018/pc_events.jsonl",
+      "source": "main/fpga/reports/board_deploy_20261018/pc_events.jsonl",
+      "bytes": 127367
+    },
+    {
+      "file": "evidence/board_deploy_20261018/predict_00001.json",
+      "source": "main/fpga/reports/board_deploy_20261018/predict_00001.json",
+      "bytes": 6000
+    },
+    {
+      "file": "evidence/board_deploy_20261018/program.log",
+      "source": "main/fpga/reports/board_deploy_20261018/program.log",
+      "bytes": 132
+    },
+    {
+      "file": "evidence/board_deploy_20261018/README.md",
+      "source": "main/fpga/reports/board_deploy_20261018/README.md",
+      "bytes": 2103
+    },
+    {
+      "file": "evidence/board_deploy_20261018/runtime.log",
+      "source": "main/fpga/reports/board_deploy_20261018/runtime.log",
+      "bytes": 119
+    },
+    {
+      "file": "evidence/board_deploy_20261018/runtime_after.log",
+      "source": "main/fpga/reports/board_deploy_20261018/runtime_after.log",
+      "bytes": 7520
+    },
+    {
+      "file": "evidence/board_deploy_20261018/status_final.json",
+      "source": "main/fpga/reports/board_deploy_20261018/status_final.json",
+      "bytes": 10918
+    },
+    {
+      "file": "evidence/board_deploy_20261018/status_latest.json",
+      "source": "main/fpga/reports/board_deploy_20261018/status_latest.json",
+      "bytes": 10175
+    },
+    {
+      "file": "evidence/board_test482/00001/gap.int16.npy",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/full/four_00001/gap.int16.npy",
+      "bytes": 448
+    },
+    {
+      "file": "evidence/board_test482/00001/layer1_output.npy",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/full/four_00001/layer1_output.npy",
+      "bytes": 135296
+    },
+    {
+      "file": "evidence/board_test482/00001/layer2_output.npy",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/full/four_00001/layer2_output.npy",
+      "bytes": 67712
+    },
+    {
+      "file": "evidence/board_test482/00001/layer3_output.npy",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/full/four_00001/layer3_output.npy",
+      "bytes": 33920
+    },
+    {
+      "file": "evidence/board_test482/00001/layer4_output.npy",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/full/four_00001/layer4_output.npy",
+      "bytes": 42368
+    },
+    {
+      "file": "evidence/board_test482/predictions.csv",
+      "source": "test482 full/predictions.csv, model=four, all original columns",
+      "bytes": 100422
+    },
+    {
+      "file": "evidence/collection_20261028/axi_dma_0.txt",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 2130
+    },
+    {
+      "file": "evidence/collection_20261028/axi_interconnect_0.txt",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 18041
+    },
+    {
+      "file": "evidence/collection_20261028/board_configuration.txt",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 228
+    },
+    {
+      "file": "evidence/collection_20261028/board_rebuild.json",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 357
+    },
+    {
+      "file": "evidence/collection_20261028/file_correspondence.json",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 875
+    },
+    {
+      "file": "evidence/collection_20261028/integer_board_00001.json",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 800
+    },
+    {
+      "file": "evidence/collection_20261028/integer_board_layers.csv",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 116
+    },
+    {
+      "file": "evidence/collection_20261028/processing_system7_0.txt",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 67945
+    },
+    {
+      "file": "evidence/collection_20261028/README.md",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 861
+    },
+    {
+      "file": "evidence/collection_20261028/test482_confusion.csv",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 75
+    },
+    {
+      "file": "evidence/collection_20261028/test482_metrics.json",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 1159
+    },
+    {
+      "file": "evidence/display_refresh_20261019/board_before.log",
+      "source": "main/fpga/reports/display_refresh_20261019/board_before.log",
+      "bytes": 948
+    },
+    {
+      "file": "evidence/display_refresh_20261019/board_drm.log",
+      "source": "main/fpga/reports/display_refresh_20261019/board_drm.log",
+      "bytes": 1427
+    },
+    {
+      "file": "evidence/display_refresh_20261019/board_install.log",
+      "source": "main/fpga/reports/display_refresh_20261019/board_install.log",
+      "bytes": 2019
+    },
+    {
+      "file": "evidence/display_refresh_20261019/board_runtime.log",
+      "source": "main/fpga/reports/display_refresh_20261019/board_runtime.log",
+      "bytes": 1144
+    },
+    {
+      "file": "evidence/display_refresh_20261019/board_verification.json",
+      "source": "main/fpga/reports/display_refresh_20261019/board_verification.json",
+      "bytes": 735
+    },
+    {
+      "file": "evidence/display_refresh_20261019/buffer_results.json",
+      "source": "main/fpga/reports/display_refresh_20261019/buffer_results.json",
+      "bytes": 307
+    },
+    {
+      "file": "evidence/display_refresh_20261019/local_check.json",
+      "source": "main/fpga/reports/display_refresh_20261019/local_check.json",
+      "bytes": 1009
+    },
+    {
+      "file": "evidence/display_refresh_20261019/pixel_results.json",
+      "source": "main/fpga/reports/display_refresh_20261019/pixel_results.json",
+      "bytes": 269
+    },
+    {
+      "file": "evidence/display_refresh_20261019/README.md",
+      "source": "main/fpga/reports/display_refresh_20261019/README.md",
+      "bytes": 6423
+    },
+    {
+      "file": "evidence/drc_repair/baseline_simulation.log",
+      "source": "main/fpga/reports/drc_repair_20261016/baseline_simulation.log",
+      "bytes": 1713
+    },
+    {
+      "file": "evidence/drc_repair/build_repaired.tcl",
+      "source": "main/fpga/reports/drc_repair_20261016/build_repaired.tcl",
+      "bytes": 3135
+    },
+    {
+      "file": "evidence/drc_repair/hwh_contracts.json",
+      "source": "main/fpga/reports/drc_repair_20261016/hwh_contracts.json",
+      "bytes": 243
+    },
+    {
+      "file": "evidence/drc_repair/prefetch_simulation.json",
+      "source": "main/fpga/reports/drc_repair_20261016/prefetch_simulation.json",
+      "bytes": 4642
+    },
+    {
+      "file": "evidence/drc_repair/prefetch_simulation.log",
+      "source": "main/fpga/reports/drc_repair_20261016/prefetch_simulation.log",
+      "bytes": 1711
+    },
+    {
+      "file": "evidence/drc_repair/README.md",
+      "source": "main/fpga/reports/drc_repair_20261016/README.md",
+      "bytes": 3549
+    },
+    {
+      "file": "evidence/drc_repair/repair_actions.log",
+      "source": "main/fpga/reports/drc_repair_20261016/repair_actions.log",
+      "bytes": 2407
+    },
+    {
+      "file": "evidence/drc_repair/repair_netlist.tcl",
+      "source": "main/fpga/reports/drc_repair_20261016/repair_netlist.tcl",
+      "bytes": 3408
+    },
+    {
+      "file": "evidence/drc_repair/result.json",
+      "source": "main/fpga/reports/drc_repair_20261016/result.json",
+      "bytes": 331
+    },
+    {
+      "file": "evidence/drc_repair/verify_numeric.py",
+      "source": "main/fpga/reports/drc_repair_20261016/verify_numeric.py",
+      "bytes": 8599
+    },
+    {
+      "file": "evidence/implementation_20261016/bus_skew.rpt",
+      "source": "main/fpga/reports/ax7020_cnn_lcd_drc_20261016/bus_skew.rpt",
+      "bytes": 126788
+    },
+    {
+      "file": "evidence/implementation_20261016/clocks.rpt",
+      "source": "main/fpga/reports/ax7020_cnn_lcd_drc_20261016/clocks.rpt",
+      "bytes": 3023
+    },
+    {
+      "file": "evidence/implementation_20261016/drc.rpt",
+      "source": "main/fpga/reports/ax7020_cnn_lcd_drc_20261016/drc.rpt",
+      "bytes": 1467
+    },
+    {
+      "file": "evidence/implementation_20261016/implementation.log",
+      "source": "main/fpga/vivado/build/ax7020_cnn_lcd_drc_20261016/ax7020_cnn_lcd_drc_20261016.runs/impl_1/runme.log",
+      "bytes": 110993
+    },
+    {
+      "file": "evidence/implementation_20261016/io.rpt",
+      "source": "main/fpga/reports/ax7020_cnn_lcd_drc_20261016/io.rpt",
+      "bytes": 124765
+    },
+    {
+      "file": "evidence/implementation_20261016/methodology.rpt",
+      "source": "main/fpga/reports/ax7020_cnn_lcd_drc_20261016/methodology.rpt",
+      "bytes": 15092
+    },
+    {
+      "file": "evidence/implementation_20261016/README.md",
+      "source": "main/fpga/reports/ax7020_cnn_lcd_drc_20261016/README.md",
+      "bytes": 567
+    },
+    {
+      "file": "evidence/implementation_20261016/synthesis.log",
+      "source": "main/fpga/vivado/build/ax7020_cnn_lcd_drc_20261016/ax7020_cnn_lcd_drc_20261016.runs/synth_1/runme.log",
+      "bytes": 142621
+    },
+    {
+      "file": "evidence/implementation_20261016/timing_summary.rpt",
+      "source": "main/fpga/reports/ax7020_cnn_lcd_drc_20261016/timing_summary.rpt",
+      "bytes": 109463
+    },
+    {
+      "file": "evidence/implementation_20261016/utilization.rpt",
+      "source": "main/fpga/reports/ax7020_cnn_lcd_drc_20261016/utilization.rpt",
+      "bytes": 13272
+    },
+    {
+      "file": "evidence/implementation_20261016/utilization_hierarchical.rpt",
+      "source": "main/fpga/reports/ax7020_cnn_lcd_drc_20261016/utilization_hierarchical.rpt",
+      "bytes": 171734
+    },
+    {
+      "file": "evidence/implementation_20261016/utilization_synth.rpt",
+      "source": "main/fpga/vivado/build/ax7020_cnn_lcd_drc_20261016/ax7020_cnn_lcd_drc_20261016.runs/synth_1/cnn_wrapper_utilization_synth.rpt",
+      "bytes": 8936
+    },
+    {
+      "file": "evidence/implementation_review_20261022/artifact_review.json",
+      "source": "main/fpga/reports/board_review_20261022/artifact_review.json",
+      "bytes": 3227
+    },
+    {
+      "file": "evidence/implementation_review_20261022/bus_skew.rpt",
+      "source": "main/fpga/reports/board_review_20261022/bus_skew.rpt",
+      "bytes": 126770
+    },
+    {
+      "file": "evidence/implementation_review_20261022/cdc.rpt",
+      "source": "main/fpga/reports/board_review_20261022/cdc.rpt",
+      "bytes": 27681
+    },
+    {
+      "file": "evidence/implementation_review_20261022/check_settings.tsv",
+      "source": "main/fpga/reports/board_review_20261022/check_settings.tsv",
+      "bytes": 257
+    },
+    {
+      "file": "evidence/implementation_review_20261022/clocks.tsv",
+      "source": "main/fpga/reports/board_review_20261022/clocks.tsv",
+      "bytes": 117
+    },
+    {
+      "file": "evidence/implementation_review_20261022/drc.rpt",
+      "source": "main/fpga/reports/board_review_20261022/drc.rpt",
+      "bytes": 1472
+    },
+    {
+      "file": "evidence/implementation_review_20261022/methodology.rpt",
+      "source": "main/fpga/reports/board_review_20261022/methodology.rpt",
+      "bytes": 15097
+    },
+    {
+      "file": "evidence/implementation_review_20261022/ports.tsv",
+      "source": "main/fpga/reports/board_review_20261022/ports.tsv",
+      "bytes": 7234
+    },
+    {
+      "file": "evidence/implementation_review_20261022/README.md",
+      "source": "main/fpga/reports/board_review_20261022/README.md",
+      "bytes": 9995
+    },
+    {
+      "file": "evidence/implementation_review_20261022/route_status.rpt",
+      "source": "main/fpga/reports/board_review_20261022/route_status.rpt",
+      "bytes": 651
+    },
+    {
+      "file": "evidence/implementation_review_20261022/summary.json",
+      "source": "main/fpga/reports/board_review_20261022/summary.json",
+      "bytes": 1153
+    },
+    {
+      "file": "evidence/implementation_review_20261022/timing_summary.rpt",
+      "source": "main/fpga/reports/board_review_20261022/timing_summary.rpt",
+      "bytes": 807106
+    },
+    {
+      "file": "evidence/implementation_review_20261022/utilization.rpt",
+      "source": "main/fpga/reports/board_review_20261022/utilization.rpt",
+      "bytes": 13254
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/.gitignore",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/.gitignore",
+      "bytes": 63
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/an970_user_manual_excerpt.txt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/an970_user_manual_excerpt.txt",
+      "bytes": 1825
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/an970_user_manual_page_3.png",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/an970_user_manual_page_3.png",
+      "bytes": 312499
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/an970_user_manual_page_4.png",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/an970_user_manual_page_4.png",
+      "bytes": 210127
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/an970_user_manual_page_5.png",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/an970_user_manual_page_5.png",
+      "bytes": 619101
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/analyze.tcl",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/analyze.tcl",
+      "bytes": 4211
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/ax5201_datasheet.txt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/ax5201_datasheet.txt",
+      "bytes": 12115
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/clock_fall_before.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/clock_fall_before.rpt",
+      "bytes": 3693
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/clock_output_before.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/clock_output_before.rpt",
+      "bytes": 6423
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/clock_port_properties.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/clock_port_properties.rpt",
+      "bytes": 1306
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/clock_rise_before.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/clock_rise_before.rpt",
+      "bytes": 3693
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/clocks_before.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/clocks_before.rpt",
+      "bytes": 2871
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/clocks_verbose.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/clocks_verbose.rpt",
+      "bytes": 2881
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/compare_sampling_edges.tcl",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/compare_sampling_edges.tcl",
+      "bytes": 2660
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/constraint_template.tcl",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/constraint_template.tcl",
+      "bytes": 1104
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/constraints_analysis.xdc",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/constraints_analysis.xdc",
+      "bytes": 14541
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/constraints_before.xdc",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/constraints_before.xdc",
+      "bytes": 13237
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/constraints_diff.html",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/constraints_diff.html",
+      "bytes": 11604
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/corrected_rising_constraints/check_timing.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/corrected_rising_constraints/check_timing.rpt",
+      "bytes": 3512
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/corrected_rising_constraints/constraints.xdc",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/corrected_rising_constraints/constraints.xdc",
+      "bytes": 14200
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/corrected_rising_constraints/hold.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/corrected_rising_constraints/hold.rpt",
+      "bytes": 113491
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/corrected_rising_constraints/ports.csv",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/corrected_rising_constraints/ports.csv",
+      "bytes": 730
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/corrected_rising_constraints/setup.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/corrected_rising_constraints/setup.rpt",
+      "bytes": 112738
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/evidence.txt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/evidence.txt",
+      "bytes": 384
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/methodology_resolution_report.md",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/methodology_resolution_report.md",
+      "bytes": 4610
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/panel_datasheet.txt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/panel_datasheet.txt",
+      "bytes": 26695
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/panel_page_11.png",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/panel_page_11.png",
+      "bytes": 179860
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/panel_page_12.png",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/panel_page_12.png",
+      "bytes": 154184
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/pixel_before.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/pixel_before.rpt",
+      "bytes": 12919
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/requested_33p26mhz_clocks.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/requested_33p26mhz_clocks.rpt",
+      "bytes": 3236
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/requested_33p26mhz_hold.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/requested_33p26mhz_hold.rpt",
+      "bytes": 204818
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/requested_33p26mhz_ports.csv",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/requested_33p26mhz_ports.csv",
+      "bytes": 2232
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/requested_33p26mhz_setup.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/requested_33p26mhz_setup.rpt",
+      "bytes": 224099
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/run.tcl",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/run.tcl",
+      "bytes": 189
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/sampling_edge_comparison/clocks.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/sampling_edge_comparison/clocks.rpt",
+      "bytes": 3616
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/sampling_edge_comparison/constraints.xdc",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/sampling_edge_comparison/constraints.xdc",
+      "bytes": 14901
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/sampling_edge_comparison/falling_hold.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/sampling_edge_comparison/falling_hold.rpt",
+      "bytes": 103540
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/sampling_edge_comparison/falling_ports.csv",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/sampling_edge_comparison/falling_ports.csv",
+      "bytes": 757
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/sampling_edge_comparison/falling_setup.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/sampling_edge_comparison/falling_setup.rpt",
+      "bytes": 113182
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/sampling_edge_comparison/rising_hold.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/sampling_edge_comparison/rising_hold.rpt",
+      "bytes": 113794
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/sampling_edge_comparison/rising_ports.csv",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/sampling_edge_comparison/rising_ports.csv",
+      "bytes": 730
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/sampling_edge_comparison/rising_setup.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/sampling_edge_comparison/rising_setup.rpt",
+      "bytes": 113041
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/sampling_edge_comparison/summary.csv",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/sampling_edge_comparison/summary.csv",
+      "bytes": 135
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/schematic_datasheet.txt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/schematic_datasheet.txt",
+      "bytes": 3795
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/schematic_page_1.png",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/schematic_page_1.png",
+      "bytes": 205203
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/static_100mhz_clocks.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/static_100mhz_clocks.rpt",
+      "bytes": 3354
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/static_100mhz_hold.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/static_100mhz_hold.rpt",
+      "bytes": 293309
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/static_100mhz_ports.csv",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/static_100mhz_ports.csv",
+      "bytes": 2363
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/static_100mhz_setup.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/static_100mhz_setup.rpt",
+      "bytes": 309828
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/static_external_methodology.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/static_external_methodology.rpt",
+      "bytes": 20456
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/static_external_timing_summary.rpt",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/static_external_timing_summary.rpt",
+      "bytes": 538153
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/summary.json",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/summary.json",
+      "bytes": 3125
+    },
+    {
+      "file": "evidence/lcd_external_timing_20261024/verify_corrected_constraints.tcl",
+      "source": "main/fpga/reports/lcd_external_timing_20261024/verify_corrected_constraints.tcl",
+      "bytes": 1572
+    },
+    {
+      "file": "evidence/model_identity/uart_model_check.log",
+      "source": "root/fpga/reports/board_model_uart_20261027/uart_model_check.log",
+      "bytes": 3157
+    },
+    {
+      "file": "evidence/original_build_scripts/attach_ax7020_lcd.tcl",
+      "source": "main/fpga/vivado/attach_ax7020_lcd.tcl",
+      "bytes": 11265
+    },
+    {
+      "file": "evidence/original_build_scripts/build_ax7020_cnn.tcl",
+      "source": "main/fpga/vivado/build_ax7020_cnn.tcl",
+      "bytes": 5313
+    },
+    {
+      "file": "evidence/original_build_scripts/build_ax7020_cnn_lcd.tcl",
+      "source": "main/fpga/vivado/build_ax7020_cnn_lcd.tcl",
+      "bytes": 1509
+    },
+    {
+      "file": "evidence/original_build_scripts/package_cnn.tcl",
+      "source": "main/fpga/vivado/package_cnn.tcl",
+      "bytes": 2299
+    },
+    {
+      "file": "evidence/original_services/hyperleaf-cnn.service",
+      "source": "main/ui/screen/systemd/hyperleaf-cnn.service",
+      "bytes": 710
+    },
+    {
+      "file": "evidence/original_services/hyperleaf-controller.service",
+      "source": "main/ui/screen/systemd/hyperleaf-controller.service",
+      "bytes": 508
+    },
+    {
+      "file": "evidence/original_services/hyperleaf-display.service",
+      "source": "main/ui/screen/systemd/hyperleaf-display.service",
+      "bytes": 463
+    },
+    {
+      "file": "evidence/original_services/hyperleaf-hardware.service",
+      "source": "main/ui/screen/systemd/hyperleaf-hardware.service",
+      "bytes": 601
+    },
+    {
+      "file": "evidence/original_services/README.md",
+      "source": "main/ui/screen/systemd/README.md",
+      "bytes": 1295
+    },
+    {
+      "file": "evidence/platform_comparison/benchmark_laptop_cpu_10_20260928.csv",
+      "source": "main/fpga/reports/benchmark_laptop_cpu_10_20260928.csv",
+      "bytes": 2178
+    },
+    {
+      "file": "evidence/platform_comparison/benchmark_laptop_gpu_10_20260928.csv",
+      "source": "main/fpga/reports/benchmark_laptop_gpu_10_20260928.csv",
+      "bytes": 2556
+    },
+    {
+      "file": "evidence/platform_comparison/benchmark_pl_net_10_20260928.csv",
+      "source": "main/fpga/reports/benchmark_pl_net_10_20260928.csv",
+      "bytes": 3206
+    },
+    {
+      "file": "evidence/platform_comparison/benchmark_ps_cpu_10_20260928.csv",
+      "source": "main/fpga/reports/benchmark_ps_cpu_10_20260928.csv",
+      "bytes": 2472
+    },
+    {
+      "file": "evidence/platform_comparison/four_platform_10samples_20260928.md",
+      "source": "main/fpga/reports/four_platform_10samples_20260928.md",
+      "bytes": 5057
+    },
+    {
+      "file": "evidence/platform_comparison/integer_chain_10samples.csv",
+      "source": "main/fpga/reports/integer_chain_10samples.csv",
+      "bytes": 720
+    },
+    {
+      "file": "evidence/preprocess_fixed/bands.csv",
+      "source": "main/fpga/reports/preprocess_fixed/bands.csv",
+      "bytes": 18937
+    },
+    {
+      "file": "evidence/preprocess_fixed/drc.rpt",
+      "source": "main/fpga/reports/preprocess_fixed/drc.rpt",
+      "bytes": 3294
+    },
+    {
+      "file": "evidence/preprocess_fixed/lane_initial_tb_fail.log",
+      "source": "main/fpga/reports/preprocess_fixed/lane_initial_tb_fail.log",
+      "bytes": 1778
+    },
+    {
+      "file": "evidence/preprocess_fixed/lane_padded_rom_pass.log",
+      "source": "main/fpga/reports/preprocess_fixed/lane_padded_rom_pass.log",
+      "bytes": 2393
+    },
+    {
+      "file": "evidence/preprocess_fixed/lane_sim.log",
+      "source": "main/fpga/reports/preprocess_fixed/lane_sim.log",
+      "bytes": 2405
+    },
+    {
+      "file": "evidence/preprocess_fixed/lane_xelab.log",
+      "source": "main/fpga/reports/preprocess_fixed/lane_xelab.log",
+      "bytes": 751
+    },
+    {
+      "file": "evidence/preprocess_fixed/mac_initial_tb_fail.log",
+      "source": "main/fpga/reports/preprocess_fixed/mac_initial_tb_fail.log",
+      "bytes": 1762
+    },
+    {
+      "file": "evidence/preprocess_fixed/mac_sim.log",
+      "source": "main/fpga/reports/preprocess_fixed/mac_sim.log",
+      "bytes": 1725
+    },
+    {
+      "file": "evidence/preprocess_fixed/mac_xelab.log",
+      "source": "main/fpga/reports/preprocess_fixed/mac_xelab.log",
+      "bytes": 689
+    },
+    {
+      "file": "evidence/preprocess_fixed/ooc_build.log",
+      "source": "main/fpga/reports/preprocess_fixed/ooc_build.log",
+      "bytes": 66367
+    },
+    {
+      "file": "evidence/preprocess_fixed/padded_ooc_build.log",
+      "source": "main/fpga/reports/preprocess_fixed/padded_ooc_build.log",
+      "bytes": 67498
+    },
+    {
+      "file": "evidence/preprocess_fixed/padded_timing_summary.rpt",
+      "source": "main/fpga/reports/preprocess_fixed/padded_timing_summary.rpt",
+      "bytes": 16155
+    },
+    {
+      "file": "evidence/preprocess_fixed/padded_utilization.rpt",
+      "source": "main/fpga/reports/preprocess_fixed/padded_utilization.rpt",
+      "bytes": 2136
+    },
+    {
+      "file": "evidence/preprocess_fixed/precision_sweep.csv",
+      "source": "main/fpga/reports/preprocess_fixed/precision_sweep.csv",
+      "bytes": 122
+    },
+    {
+      "file": "evidence/preprocess_fixed/README.md",
+      "source": "main/fpga/reports/preprocess_fixed/README.md",
+      "bytes": 11643
+    },
+    {
+      "file": "evidence/preprocess_fixed/rounding_exceptions.csv",
+      "source": "main/fpga/reports/preprocess_fixed/rounding_exceptions.csv",
+      "bytes": 290920
+    },
+    {
+      "file": "evidence/preprocess_fixed/summary.json",
+      "source": "main/fpga/reports/preprocess_fixed/summary.json",
+      "bytes": 596
+    },
+    {
+      "file": "evidence/preprocess_fixed/synth_utilization.rpt",
+      "source": "main/fpga/reports/preprocess_fixed/synth_utilization.rpt",
+      "bytes": 2040
+    },
+    {
+      "file": "evidence/preprocess_fixed/ten_samples.csv",
+      "source": "main/fpga/reports/preprocess_fixed/ten_samples.csv",
+      "bytes": 1260
+    },
+    {
+      "file": "evidence/preprocess_fixed/timing_summary.rpt",
+      "source": "main/fpga/reports/preprocess_fixed/timing_summary.rpt",
+      "bytes": 16893
+    },
+    {
+      "file": "evidence/preprocess_fixed/utilization.rpt",
+      "source": "main/fpga/reports/preprocess_fixed/utilization.rpt",
+      "bytes": 2136
+    },
+    {
+      "file": "evidence/preprocess_fixed/xvlog.log",
+      "source": "main/fpga/reports/preprocess_fixed/xvlog.log",
+      "bytes": 928
+    },
+    {
+      "file": "evidence/raw_v14_history/board_20261003.md",
+      "source": "main/fpga/reports/ax7020_raw_v14/board_20261003.md",
+      "bytes": 11915
+    },
+    {
+      "file": "evidence/raw_v14_history/board_integer_compare.json",
+      "source": "main/fpga/reports/ax7020_raw_v14/board_integer_compare.json",
+      "bytes": 840
+    },
+    {
+      "file": "evidence/raw_v14_history/board_raw_00001/gap.int16.npy",
+      "source": "main/fpga/reports/ax7020_raw_v14/board_raw_00001/gap.int16.npy",
+      "bytes": 448
+    },
+    {
+      "file": "evidence/raw_v14_history/board_raw_00001/layer1_output.npy",
+      "source": "main/fpga/reports/ax7020_raw_v14/board_raw_00001/layer1_output.npy",
+      "bytes": 135296
+    },
+    {
+      "file": "evidence/raw_v14_history/board_raw_00001/layer2_output.npy",
+      "source": "main/fpga/reports/ax7020_raw_v14/board_raw_00001/layer2_output.npy",
+      "bytes": 67712
+    },
+    {
+      "file": "evidence/raw_v14_history/board_raw_00001/layer3_output.npy",
+      "source": "main/fpga/reports/ax7020_raw_v14/board_raw_00001/layer3_output.npy",
+      "bytes": 33920
+    },
+    {
+      "file": "evidence/raw_v14_history/board_raw_00001/layer4_output.npy",
+      "source": "main/fpga/reports/ax7020_raw_v14/board_raw_00001/layer4_output.npy",
+      "bytes": 42368
+    },
+    {
+      "file": "evidence/raw_v14_history/board_raw_00001/result.json",
+      "source": "main/fpga/reports/ax7020_raw_v14/board_raw_00001/result.json",
+      "bytes": 448
+    },
+    {
+      "file": "evidence/raw_v14_history/board_raw_legacy_compare.json",
+      "source": "main/fpga/reports/ax7020_raw_v14/board_raw_legacy_compare.json",
+      "bytes": 534
+    },
+    {
+      "file": "evidence/raw_v14_history/raw_sd_10.csv",
+      "source": "main/fpga/reports/ax7020_raw_v14/raw_sd_10.csv",
+      "bytes": 1703
+    },
+    {
+      "file": "evidence/raw_v14_history/raw_sd_10.log",
+      "source": "main/fpga/reports/ax7020_raw_v14/raw_sd_10.log",
+      "bytes": 1932
+    },
+    {
+      "file": "evidence/raw_v14_history/README.md",
+      "source": "main/fpga/reports/ax7020_raw_v14/README.md",
+      "bytes": 13290
+    },
+    {
+      "file": "evidence/raw_v14_history/rtl_adapter.log",
+      "source": "main/fpga/reports/ax7020_raw_v14/rtl_adapter.log",
+      "bytes": 1768
+    },
+    {
+      "file": "evidence/raw_v14_history/rtl_lane_exhaustive.log",
+      "source": "main/fpga/reports/ax7020_raw_v14/rtl_lane_exhaustive.log",
+      "bytes": 2417
+    },
+    {
+      "file": "evidence/raw_v14_history/rtl_legacy_full.log",
+      "source": "main/fpga/reports/ax7020_raw_v14/rtl_legacy_full.log",
+      "bytes": 2358
+    },
+    {
+      "file": "evidence/raw_v14_history/rtl_mac.log",
+      "source": "main/fpga/reports/ax7020_raw_v14/rtl_mac.log",
+      "bytes": 1711
+    },
+    {
+      "file": "evidence/raw_v14_history/rtl_raw_full.log",
+      "source": "main/fpga/reports/ax7020_raw_v14/rtl_raw_full.log",
+      "bytes": 2434
+    },
+    {
+      "file": "evidence/raw_v14_history/stress400_20261003.md",
+      "source": "main/fpga/reports/ax7020_raw_v14/stress400_20261003.md",
+      "bytes": 11053
+    },
+    {
+      "file": "evidence/raw_v14_history/stress400_accuracy.csv",
+      "source": "main/fpga/reports/ax7020_raw_v14/stress400_accuracy.csv",
+      "bytes": 70872
+    },
+    {
+      "file": "evidence/raw_v14_history/stress400_audit.json",
+      "source": "main/fpga/reports/ax7020_raw_v14/stress400_audit.json",
+      "bytes": 8113
+    },
+    {
+      "file": "evidence/raw_v14_history/stress400_predictions.csv",
+      "source": "main/fpga/reports/ax7020_raw_v14/stress400_predictions.csv",
+      "bytes": 242305
+    },
+    {
+      "file": "evidence/raw_v14_history/stress400_predictions.json",
+      "source": "main/fpga/reports/ax7020_raw_v14/stress400_predictions.json",
+      "bytes": 1743
+    },
+    {
+      "file": "evidence/raw_v14_history/stress400_run.log",
+      "source": "main/fpga/reports/ax7020_raw_v14/stress400_run.log",
+      "bytes": 2350
+    },
+    {
+      "file": "evidence/raw_v14_history/stress400_selection.json",
+      "source": "main/fpga/reports/ax7020_raw_v14/stress400_selection.json",
+      "bytes": 1213
+    },
+    {
+      "file": "evidence/release_notes_20261016.md",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 1777
+    },
+    {
+      "file": "evidence/screen_source_notes.md",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 13882
+    },
+    {
+      "file": "evidence/test482_source/analyze.py",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/analyze.py",
+      "bytes": 4504
+    },
+    {
+      "file": "evidence/test482_source/confusion_four.csv",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/confusion_four.csv",
+      "bytes": 87
+    },
+    {
+      "file": "evidence/test482_source/evaluation_contract.json",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/evaluation_contract.json",
+      "bytes": 1252
+    },
+    {
+      "file": "evidence/test482_source/full/completed.json",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/full/completed.json",
+      "bytes": 1170
+    },
+    {
+      "file": "evidence/test482_source/full/predictions.csv",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/full/predictions.csv",
+      "bytes": 210716
+    },
+    {
+      "file": "evidence/test482_source/full/run_metadata.json",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/full/run_metadata.json",
+      "bytes": 1104
+    },
+    {
+      "file": "evidence/test482_source/full_console.log",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/full_console.log",
+      "bytes": 420246
+    },
+    {
+      "file": "evidence/test482_source/metrics.json",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/metrics.json",
+      "bytes": 3624
+    },
+    {
+      "file": "evidence/test482_source/pack_source_comparison.json",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/pack_source_comparison.json",
+      "bytes": 3787
+    },
+    {
+      "file": "evidence/test482_source/README.md",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/README.md",
+      "bytes": 8059
+    },
+    {
+      "file": "evidence/test482_source/result_crosscheck.json",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/result_crosscheck.json",
+      "bytes": 754
+    },
+    {
+      "file": "evidence/test482_source/run_on_board.py",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/run_on_board.py",
+      "bytes": 5032
+    },
+    {
+      "file": "evidence/test482_source/test_manifest.csv",
+      "source": "root/fpga/reports/test482_four_vs_five_20261027/test_manifest.csv",
+      "bytes": 19578
+    },
+    {
+      "file": "images/00001.tiff",
+      "source": "existing Original4 reproducibility samples/00001.tiff",
+      "bytes": 6927522
+    },
+    {
+      "file": "images/00002.tiff",
+      "source": "existing Original4 reproducibility samples/00002.tiff",
+      "bytes": 6927522
+    },
+    {
+      "file": "images/00014.tiff",
+      "source": "existing Original4 reproducibility samples/00014.tiff",
+      "bytes": 6927522
+    },
+    {
+      "file": "images/00022.tiff",
+      "source": "existing Original4 reproducibility samples/00022.tiff",
+      "bytes": 6927522
+    },
+    {
+      "file": "images/00034.tiff",
+      "source": "existing Original4 reproducibility samples/00034.tiff",
+      "bytes": 6927522
+    },
+    {
+      "file": "images/00047.tiff",
+      "source": "existing Original4 reproducibility samples/00047.tiff",
+      "bytes": 6927522
+    },
+    {
+      "file": "images/00048.tiff",
+      "source": "existing Original4 reproducibility samples/00048.tiff",
+      "bytes": 6927522
+    },
+    {
+      "file": "images/00059.tiff",
+      "source": "existing Original4 reproducibility samples/00059.tiff",
+      "bytes": 6927522
+    },
+    {
+      "file": "images/00064.tiff",
+      "source": "existing Original4 reproducibility samples/00064.tiff",
+      "bytes": 6927522
+    },
+    {
+      "file": "images/00070.tiff",
+      "source": "existing Original4 reproducibility samples/00070.tiff",
+      "bytes": 6927522
+    },
+    {
+      "file": "ip/cnn_axis_accel/component.xml",
+      "source": "released cnn_axis_accel_ip.zip/component.xml",
+      "bytes": 47539
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/axil_regs.v",
+      "source": "released cnn_axis_accel_ip.zip/src/axil_regs.v",
+      "bytes": 2929
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/cnn_axis_accel.v",
+      "source": "released cnn_axis_accel_ip.zip/src/cnn_axis_accel.v",
+      "bytes": 7775
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/cnn_tile_core.v",
+      "source": "released cnn_axis_accel_ip.zip/src/cnn_tile_core.v",
+      "bytes": 14084
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/coefficients.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/coefficients.mem",
+      "bytes": 4488
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/correction_bank_0.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_0.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/correction_bank_1.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_1.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/correction_bank_2.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_2.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/correction_bank_3.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_3.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/correction_bank_4.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_4.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/correction_bank_5.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_5.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/correction_bank_6.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_6.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/correction_bank_7.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_7.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/correction_bank_8.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_bank_8.mem",
+      "bytes": 5120
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/correction_directory.mem",
+      "source": "released cnn_axis_accel_ip.zip/src/correction_directory.mem",
+      "bytes": 91392
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/pe_array.v",
+      "source": "released cnn_axis_accel_ip.zip/src/pe_array.v",
+      "bytes": 4684
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/raw_tile_preprocess.v",
+      "source": "released cnn_axis_accel_ip.zip/src/raw_tile_preprocess.v",
+      "bytes": 5286
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/requant_pipe.v",
+      "source": "released cnn_axis_accel_ip.zip/src/requant_pipe.v",
+      "bytes": 2877
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/standardize_mac.v",
+      "source": "released cnn_axis_accel_ip.zip/src/standardize_mac.v",
+      "bytes": 3850
+    },
+    {
+      "file": "ip/cnn_axis_accel/src/tiff_preprocess_lane.v",
+      "source": "released cnn_axis_accel_ip.zip/src/tiff_preprocess_lane.v",
+      "bytes": 4459
+    },
+    {
+      "file": "ip/cnn_axis_accel/xgui/cnn_axis_accel_v1_0.tcl",
+      "source": "released cnn_axis_accel_ip.zip/xgui/cnn_axis_accel_v1_0.tcl",
+      "bytes": 885
+    },
+    {
+      "file": "ip/vendor/axi_dynclk_v1_0/component.xml",
+      "source": "ALINX/course_s4_linux/08_lcd_touch/my_ip/axi_dynclk_v1_0/component.xml",
+      "bytes": 37106
+    },
+    {
+      "file": "ip/vendor/axi_dynclk_v1_0/src/axi_dynclk.vhd",
+      "source": "ALINX/course_s4_linux/08_lcd_touch/my_ip/axi_dynclk_v1_0/src/axi_dynclk.vhd",
+      "bytes": 10008
+    },
+    {
+      "file": "ip/vendor/axi_dynclk_v1_0/src/axi_dynclk_s00_axi.vhd",
+      "source": "ALINX/course_s4_linux/08_lcd_touch/my_ip/axi_dynclk_v1_0/src/axi_dynclk_s00_axi.vhd",
+      "bytes": 18625
+    },
+    {
+      "file": "ip/vendor/axi_dynclk_v1_0/src/mmcme2_drp.v",
+      "source": "ALINX/course_s4_linux/08_lcd_touch/my_ip/axi_dynclk_v1_0/src/mmcme2_drp.v",
+      "bytes": 15355
+    },
+    {
+      "file": "ip/vendor/axi_dynclk_v1_0/xgui/axi_dynclk_v1_0.tcl",
+      "source": "ALINX/course_s4_linux/08_lcd_touch/my_ip/axi_dynclk_v1_0/xgui/axi_dynclk_v1_0.tcl",
+      "bytes": 1891
+    },
+    {
+      "file": "ip/vendor/lcd_pwm/component.xml",
+      "source": "ALINX/course_s4_linux/08_lcd_touch/my_ip/lcd_pwm/component.xml",
+      "bytes": 9753
+    },
+    {
+      "file": "ip/vendor/lcd_pwm/src/pwm.v",
+      "source": "ALINX/course_s4_linux/08_lcd_touch/my_ip/lcd_pwm/src/pwm.v",
+      "bytes": 1135
+    },
+    {
+      "file": "ip/vendor/lcd_pwm/src/pwm_lcd.v",
+      "source": "ALINX/course_s4_linux/08_lcd_touch/my_ip/lcd_pwm/src/pwm_lcd.v",
+      "bytes": 194
+    },
+    {
+      "file": "ip/vendor/lcd_pwm/xgui/pwm_lcd_v1_0.tcl",
+      "source": "ALINX/course_s4_linux/08_lcd_touch/my_ip/lcd_pwm/xgui/pwm_lcd_v1_0.tcl",
+      "bytes": 205
+    },
+    {
+      "file": "README.md",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 5395,
+      "updated": "2026-10-29 board retest documentation or replay instrumentation"
+    },
+    {
+      "file": "scripts/analyze_test482.py",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 2709
+    },
+    {
+      "file": "scripts/compile_display.sh",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 225
+    },
+    {
+      "file": "scripts/install_services.py",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 555
+    },
+    {
+      "file": "scripts/make_validation_vectors.py",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 5434
+    },
+    {
+      "file": "scripts/simulate.py",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 1655
+    },
+    {
+      "file": "scripts/verify_outputs.py",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 2347
+    },
+    {
+      "file": "sim/fixtures/mac.txt",
+      "source": "main/fpga/vivado/build/drc_repair_20261016/fixtures/mac.txt",
+      "bytes": 1233520
+    },
+    {
+      "file": "sim/fixtures/normalized.txt",
+      "source": "main/fpga/vivado/build/drc_repair_20261016/fixtures/normalized.txt",
+      "bytes": 210120
+    },
+    {
+      "file": "sim/fixtures/vectors.txt",
+      "source": "main/fpga/vivado/build/drc_repair_20261016/fixtures/vectors.txt",
+      "bytes": 4825539
+    },
+    {
+      "file": "skill/hyperleaf-zynq-reproduce/agents/openai.yaml",
+      "source": "root/作品提交/skill/hyperleaf-zynq-reproduce/agents/openai.yaml",
+      "bytes": 367,
+      "updated": "2026-10-28 local reproduction and Skill documentation"
+    },
+    {
+      "file": "skill/hyperleaf-zynq-reproduce/references/contracts.md",
+      "source": "root/作品提交/skill/hyperleaf-zynq-reproduce/references/contracts.md",
+      "bytes": 2309
+    },
+    {
+      "file": "skill/hyperleaf-zynq-reproduce/references/experience.md",
+      "source": "root/作品提交/skill/hyperleaf-zynq-reproduce/references/experience.md",
+      "bytes": 2254
+    },
+    {
+      "file": "skill/hyperleaf-zynq-reproduce/references/original4.md",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 2107,
+      "updated": "2026-10-28 local reproduction and Skill documentation"
+    },
+    {
+      "file": "skill/hyperleaf-zynq-reproduce/references/pynq-z2.md",
+      "source": "root/作品提交/skill/hyperleaf-zynq-reproduce/references/pynq-z2.md",
+      "bytes": 3539
+    },
+    {
+      "file": "skill/hyperleaf-zynq-reproduce/scripts/compare_replay.py",
+      "source": "root/作品提交/skill/hyperleaf-zynq-reproduce/scripts/compare_replay.py",
+      "bytes": 2602
+    },
+    {
+      "file": "skill/hyperleaf-zynq-reproduce/scripts/export_project.py",
+      "source": "root/作品提交/skill/hyperleaf-zynq-reproduce/scripts/export_project.py",
+      "bytes": 10064
+    },
+    {
+      "file": "skill/hyperleaf-zynq-reproduce/SKILL.md",
+      "source": "root/作品提交/skill/hyperleaf-zynq-reproduce/SKILL.md",
+      "bytes": 5247,
+      "updated": "2026-10-28 local reproduction and Skill documentation"
+    },
+    {
+      "file": "skill/README.md",
+      "source": "root/作品提交/skill/README.md",
+      "bytes": 1424,
+      "updated": "2026-10-28 local reproduction and Skill documentation"
+    },
+    {
+      "file": "start_pc_sender.cmd",
+      "source": "2026-10-28 collection entry or current documentation",
+      "bytes": 425
+    },
+    {
+      "file": "evidence/local_reproduction_20261028/README.md",
+      "source": "2026-10-28 local reproduction and Skill documentation",
+      "bytes": 2322
+    },
+    {
+      "file": "evidence/local_reproduction_20261028/integer_board_00001/layers.csv",
+      "source": "2026-10-28 local reproduction and Skill documentation",
+      "bytes": 116
+    },
+    {
+      "file": "evidence/local_reproduction_20261028/integer_board_00001/summary.json",
+      "source": "2026-10-28 local reproduction and Skill documentation",
+      "bytes": 800
+    },
+    {
+      "file": "evidence/local_reproduction_20261028/local_tiff_10/predictions.csv",
+      "source": "2026-10-28 local reproduction and Skill documentation",
+      "bytes": 783
+    },
+    {
+      "file": "evidence/local_reproduction_20261028/local_tiff_10/summary.json",
+      "source": "2026-10-28 local reproduction and Skill documentation",
+      "bytes": 315
+    },
+    {
+      "file": "evidence/local_reproduction_20261028/simulation/generated_cases.json",
+      "source": "2026-10-28 local reproduction and Skill documentation",
+      "bytes": 2749
+    },
+    {
+      "file": "evidence/local_reproduction_20261028/simulation/xelab.stdout.log",
+      "source": "2026-10-28 local reproduction and Skill documentation",
+      "bytes": 961
+    },
+    {
+      "file": "evidence/local_reproduction_20261028/simulation/xsim.log",
+      "source": "2026-10-28 local reproduction and Skill documentation",
+      "bytes": 2392
+    },
+    {
+      "file": "evidence/local_reproduction_20261028/simulation/xsim.stdout.log",
+      "source": "2026-10-28 local reproduction and Skill documentation",
+      "bytes": 1670
+    },
+    {
+      "file": "evidence/local_reproduction_20261028/simulation/xvlog.stdout.log",
+      "source": "2026-10-28 local reproduction and Skill documentation",
+      "bytes": 2060
+    },
+    {
+      "file": "evidence/local_reproduction_20261028/summary.json",
+      "source": "2026-10-28 local reproduction and Skill documentation",
+      "bytes": 2163
+    },
+    {
+      "file": "scripts/replay_local.py",
+      "source": "2026-10-28 local reproduction and Skill documentation",
+      "bytes": 3246
+    },
+    {
+      "file": "skill/hyperleaf-zynq-reproduce/references/verified-reuse.md",
+      "source": "2026-10-28 local reproduction and Skill documentation",
+      "bytes": 4810,
+      "updated": "2026-10-29 board retest documentation or replay instrumentation"
+    },
+    {
+      "file": "evidence/board_retest_20261029/baseline.log",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 449
+    },
+    {
+      "file": "evidence/board_retest_20261029/cancellation.json",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 6072
+    },
+    {
+      "file": "evidence/board_retest_20261029/compile_display.log",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 0
+    },
+    {
+      "file": "evidence/board_retest_20261029/direct_10.csv",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 1961
+    },
+    {
+      "file": "evidence/board_retest_20261029/direct_10.log",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 1982
+    },
+    {
+      "file": "evidence/board_retest_20261029/direct_command.txt",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 489
+    },
+    {
+      "file": "evidence/board_retest_20261029/direct_summary.json",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 1304
+    },
+    {
+      "file": "evidence/board_retest_20261029/history_list.png",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 46403
+    },
+    {
+      "file": "evidence/board_retest_20261029/history_reopened.png",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 70638
+    },
+    {
+      "file": "evidence/board_retest_20261029/history_restart.json",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 2908
+    },
+    {
+      "file": "evidence/board_retest_20261029/layers/00001/gap.int16.npy",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 448
+    },
+    {
+      "file": "evidence/board_retest_20261029/layers/00001/layer1_output.npy",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 135296
+    },
+    {
+      "file": "evidence/board_retest_20261029/layers/00001/layer2_output.npy",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 67712
+    },
+    {
+      "file": "evidence/board_retest_20261029/layers/00001/layer3_output.npy",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 33920
+    },
+    {
+      "file": "evidence/board_retest_20261029/layers/00001/layer4_output.npy",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 42368
+    },
+    {
+      "file": "evidence/board_retest_20261029/network_10_results.json",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 11799
+    },
+    {
+      "file": "evidence/board_retest_20261029/network_10_status.json",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 3141
+    },
+    {
+      "file": "evidence/board_retest_20261029/network_commands.log",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 23698
+    },
+    {
+      "file": "evidence/board_retest_20261029/network_details.png",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 68929
+    },
+    {
+      "file": "evidence/board_retest_20261029/network_health_before.json",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 260
+    },
+    {
+      "file": "evidence/board_retest_20261029/network_results.png",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 70638
+    },
+    {
+      "file": "evidence/board_retest_20261029/network_retest.py",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 10769
+    },
+    {
+      "file": "evidence/board_retest_20261029/network_summary.json",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 472
+    },
+    {
+      "file": "evidence/board_retest_20261029/new_directory_batches.json",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 40658
+    },
+    {
+      "file": "evidence/board_retest_20261029/new_services.log",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 1703
+    },
+    {
+      "file": "evidence/board_retest_20261029/new_services_journal.log",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 15601
+    },
+    {
+      "file": "evidence/board_retest_20261029/original_services/hyperleaf-cnn.service",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 710
+    },
+    {
+      "file": "evidence/board_retest_20261029/original_services/hyperleaf-controller.service",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 508
+    },
+    {
+      "file": "evidence/board_retest_20261029/original_services/hyperleaf-display.service",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 463
+    },
+    {
+      "file": "evidence/board_retest_20261029/original_services/hyperleaf-hardware.service",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 601
+    },
+    {
+      "file": "evidence/board_retest_20261029/README.md",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 4339
+    },
+    {
+      "file": "evidence/board_retest_20261029/restoration.json",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 452
+    },
+    {
+      "file": "evidence/board_retest_20261029/services_before.log",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 1976
+    },
+    {
+      "file": "evidence/board_retest_20261029/services_restored.log",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 1883
+    },
+    {
+      "file": "evidence/board_retest_20261029/summary.json",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 2779
+    },
+    {
+      "file": "evidence/board_retest_20261029/transfer.json",
+      "source": "2026-10-29 AX7020 board retest",
+      "bytes": 187
+    }
+  ],
+  "adaptations": [
+    "source.md file inventory reflects included best/best_folded and run_metadata; unused checksum inventory removed.",
+    "Current board Tcl exported from deployed BD, recreated with local IP, and exported again by Vivado 2024.1. Original cnn.bd retained.",
+    "Existing service definitions preserved under evidence/original_services; board/services templates resolve deployment paths at install time.",
+    "Four-only test482 CSV selects model=four without changing column values; paired original rows retained under evidence/test482_source.",
+    "Skill documentation updated for current Original four-layer main line; existing external Skill ZIP snapshots unchanged.",
+    "Original release and screen notes preserved as dated evidence; current runtime instructions provided in docs/run.md."
+  ],
+  "generated_entries": [
+    "build.tcl",
+    "scripts/",
+    "docs/",
+    "board/services/",
+    "data/demo_samples.json",
+    "data/stress400_order.json",
+    "evidence/collection_20261028/"
+  ],
+  "files_count": 483,
+  "local_reproduction": "evidence/local_reproduction_20261028/summary.json",
+  "board_retest": "evidence/board_retest_20261029/summary.json"
+}

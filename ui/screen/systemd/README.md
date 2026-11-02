@@ -1,0 +1,1 @@
+当前工程服务模板见board/services；在项目根目录运行sudo python3 scripts/install_services.py安装。历史部署服务原件保存在evidence/original_services。

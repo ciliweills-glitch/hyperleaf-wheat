@@ -1,0 +1,1243 @@
+{
+  "stage": "full",
+  "pass_test": true,
+  "board": "PYNQ-Z2",
+  "python": "3.6.0 (default, Apr 24 2018, 07:32:14) \n[GCC 5.3.1 20160413]",
+  "kernel": "4.9.0-xilinx",
+  "numpy": "1.14.2",
+  "board_test": true,
+  "architecture": "Original four-layer v1.4 + RAW/Q28",
+  "samples": [
+    {
+      "mode": "int16",
+      "ImageId": "00001",
+      "PhiPS2": 0.6990077895872666,
+      "ax7020_PhiPS2": 0.6990077895872666,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.6990077895872666,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.3678633150011592,
+      "t_total": 2.582498427000246,
+      "ax7020_t_predict": 0.9650224770000477,
+      "layer_seconds": [
+        1.1247512040008587,
+        0.07068808899930445,
+        0.03734565900049347,
+        0.022325035999529064
+      ]
+    },
+    {
+      "mode": "int16",
+      "ImageId": "00002",
+      "PhiPS2": 0.5696360441671129,
+      "ax7020_PhiPS2": 0.5696360441671129,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.5696360473373159,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.277401874998759,
+      "t_total": 2.451368211999579,
+      "ax7020_t_predict": 0.9430981950000046,
+      "layer_seconds": [
+        1.1241556690001744,
+        0.07098421800037613,
+        0.037412135001432034,
+        0.022117574999356293
+      ]
+    },
+    {
+      "mode": "int16",
+      "ImageId": "00014",
+      "PhiPS2": 0.7028460684733702,
+      "ax7020_PhiPS2": 0.7028460684733702,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.7028460684733702,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.2769887639988156,
+      "t_total": 2.446489648998977,
+      "ax7020_t_predict": 0.9692723649999948,
+      "layer_seconds": [
+        1.1239399179994507,
+        0.07065895099913178,
+        0.037451283000336844,
+        0.022236787999645458
+      ]
+    },
+    {
+      "mode": "int16",
+      "ImageId": "00022",
+      "PhiPS2": 0.6668350099149096,
+      "ax7020_PhiPS2": 0.6668350099149096,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.6668350225957216,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.2779151059985452,
+      "t_total": 2.461201334999714,
+      "ax7020_t_predict": 0.9487948189999997,
+      "layer_seconds": [
+        1.1248295460009103,
+        0.07076389600115363,
+        0.03746562999913294,
+        0.022157291999974404
+      ]
+    },
+    {
+      "mode": "int16",
+      "ImageId": "00034",
+      "PhiPS2": 0.6528968510705808,
+      "ax7020_PhiPS2": 0.6528968510705808,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.6528968447301748,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.2778559580001456,
+      "t_total": 2.4423905100011325,
+      "ax7020_t_predict": 0.9392557790000069,
+      "layer_seconds": [
+        1.12488051299988,
+        0.07072925800093799,
+        0.037429531999805477,
+        0.022232672999962233
+      ]
+    },
+    {
+      "mode": "int16",
+      "ImageId": "00047",
+      "PhiPS2": 0.5059904054085158,
+      "ax7020_PhiPS2": 0.5059904054085158,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.5059903990681098,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.2776912869994703,
+      "t_total": 2.42139722399952,
+      "ax7020_t_predict": 0.9403566799999794,
+      "layer_seconds": [
+        1.1247938599990448,
+        0.07066814400059229,
+        0.03749047400015115,
+        0.02217699100037862
+      ]
+    },
+    {
+      "mode": "int16",
+      "ImageId": "00048",
+      "PhiPS2": 0.6976227405821795,
+      "ax7020_PhiPS2": 0.6976227405821795,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.6976227659438035,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.2767637920005654,
+      "t_total": 2.441965629999686,
+      "ax7020_t_predict": 0.9390433369999869,
+      "layer_seconds": [
+        1.1238542449991655,
+        0.07065064599919424,
+        0.037422923000121955,
+        0.022129942000901792
+      ]
+    },
+    {
+      "mode": "int16",
+      "ImageId": "00059",
+      "PhiPS2": 0.5767321884952799,
+      "ax7020_PhiPS2": 0.5767321884952799,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.5767321853250769,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.2852075819992024,
+      "t_total": 2.4558615530004317,
+      "ax7020_t_predict": 0.9394835960000023,
+      "layer_seconds": [
+        1.1237212719988747,
+        0.07055417800074792,
+        0.037392984000689466,
+        0.022197194000909803
+      ]
+    },
+    {
+      "mode": "int16",
+      "ImageId": "00064",
+      "PhiPS2": 0.46520956721969053,
+      "ax7020_PhiPS2": 0.46520956721969053,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.46520956721969053,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.2785963579990494,
+      "t_total": 2.4657961129996693,
+      "ax7020_t_predict": 0.9385465110000268,
+      "layer_seconds": [
+        1.125772972998675,
+        0.07064343999991252,
+        0.03737218400056008,
+        0.022202019001269946
+      ]
+    },
+    {
+      "mode": "int16",
+      "ImageId": "00070",
+      "PhiPS2": 0.49316937537426675,
+      "ax7020_PhiPS2": 0.49316937537426675,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.49316937537426675,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.279385588999503,
+      "t_total": 2.435419510000429,
+      "ax7020_t_predict": 0.9395084359999828,
+      "layer_seconds": [
+        1.1255923180015088,
+        0.0710450740007218,
+        0.03754720899996755,
+        0.02220335700076248
+      ]
+    },
+    {
+      "mode": "raw",
+      "ImageId": "00001",
+      "PhiPS2": 0.6990077895872666,
+      "ax7020_PhiPS2": 0.6990077895872666,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.6990077895872666,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.3402786499991635,
+      "t_total": 1.5139403359989956,
+      "ax7020_t_predict": 0.9650224770000477,
+      "layer_seconds": [
+        1.187243013000625,
+        0.07076342400068825,
+        0.03748690499924123,
+        0.02215770499969949
+      ]
+    },
+    {
+      "mode": "raw",
+      "ImageId": "00002",
+      "PhiPS2": 0.5696360441671129,
+      "ax7020_PhiPS2": 0.5696360441671129,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.5696360473373159,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.3404683389999263,
+      "t_total": 1.5166481329997623,
+      "ax7020_t_predict": 0.9430981950000046,
+      "layer_seconds": [
+        1.1872434749984677,
+        0.07075948999954562,
+        0.03756627100119658,
+        0.02213219700024638
+      ]
+    },
+    {
+      "mode": "raw",
+      "ImageId": "00014",
+      "PhiPS2": 0.7028460684733702,
+      "ax7020_PhiPS2": 0.7028460684733702,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.7028460684733702,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.3400194290006766,
+      "t_total": 1.516039890000684,
+      "ax7020_t_predict": 0.9692723649999948,
+      "layer_seconds": [
+        1.186787890001142,
+        0.07091424000100233,
+        0.037542156998824794,
+        0.022261726000579074
+      ]
+    },
+    {
+      "mode": "raw",
+      "ImageId": "00022",
+      "PhiPS2": 0.6668350099149096,
+      "ax7020_PhiPS2": 0.6668350099149096,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.6668350225957216,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.3473873179991642,
+      "t_total": 1.5242521700001816,
+      "ax7020_t_predict": 0.9487948189999997,
+      "layer_seconds": [
+        1.1879373030005809,
+        0.0709650339995278,
+        0.03752304000045115,
+        0.022280683000644785
+      ]
+    },
+    {
+      "mode": "raw",
+      "ImageId": "00034",
+      "PhiPS2": 0.6528968510705808,
+      "ax7020_PhiPS2": 0.6528968510705808,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.6528968447301748,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.346931472000506,
+      "t_total": 1.5246415270012221,
+      "ax7020_t_predict": 0.9392557790000069,
+      "layer_seconds": [
+        1.1934719889995904,
+        0.07101516599868773,
+        0.037446587999511394,
+        0.02228080900022178
+      ]
+    },
+    {
+      "mode": "raw",
+      "ImageId": "00047",
+      "PhiPS2": 0.5059904054085158,
+      "ax7020_PhiPS2": 0.5059904054085158,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.5059903990681098,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.3398130589994253,
+      "t_total": 1.5186164409988123,
+      "ax7020_t_predict": 0.9403566799999794,
+      "layer_seconds": [
+        1.186837330000344,
+        0.07068815100137726,
+        0.037448716999278986,
+        0.022154595999381854
+      ]
+    },
+    {
+      "mode": "raw",
+      "ImageId": "00048",
+      "PhiPS2": 0.6976227405821795,
+      "ax7020_PhiPS2": 0.6976227405821795,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.6976227659438035,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.3387253759992745,
+      "t_total": 1.5172689730006823,
+      "ax7020_t_predict": 0.9390433369999869,
+      "layer_seconds": [
+        1.1857855640009802,
+        0.07069230999877618,
+        0.03750866699920152,
+        0.02221392600040417
+      ]
+    },
+    {
+      "mode": "raw",
+      "ImageId": "00059",
+      "PhiPS2": 0.5767321884952799,
+      "ax7020_PhiPS2": 0.5767321884952799,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.5767321853250769,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.3415933300002507,
+      "t_total": 1.520815173000301,
+      "ax7020_t_predict": 0.9394835960000023,
+      "layer_seconds": [
+        1.188556712000718,
+        0.07077109900092182,
+        0.037536378998993314,
+        0.02223769500051276
+      ]
+    },
+    {
+      "mode": "raw",
+      "ImageId": "00064",
+      "PhiPS2": 0.46520956721969053,
+      "ax7020_PhiPS2": 0.46520956721969053,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.46520956721969053,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.3405057489999308,
+      "t_total": 1.5195678250001947,
+      "ax7020_t_predict": 0.9385465110000268,
+      "layer_seconds": [
+        1.1876322600001004,
+        0.07070278399987728,
+        0.037419717000375385,
+        0.022184811999977683
+      ]
+    },
+    {
+      "mode": "raw",
+      "ImageId": "00070",
+      "PhiPS2": 0.49316937537426675,
+      "ax7020_PhiPS2": 0.49316937537426675,
+      "signed_diff": 0.0,
+      "abs_diff": 0.0,
+      "integer_F48": 0.49316937537426675,
+      "exact_prediction": true,
+      "close_prediction": true,
+      "commands": 316,
+      "status": 0,
+      "dma_mm2s": 4098,
+      "dma_s2mm": 4098,
+      "t_predict": 1.3405901339992852,
+      "t_total": 1.5197814439998183,
+      "ax7020_t_predict": 0.9395084359999828,
+      "layer_seconds": [
+        1.187460164001095,
+        0.07084291599858261,
+        0.03745251100008318,
+        0.02223342500110448
+      ]
+    }
+  ],
+  "layers_vs_ax7020_00001": {
+    "int16": {
+      "layer1_output.npy": {
+        "shape": [
+          32,
+          24,
+          88
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 67584,
+        "exact": true
+      },
+      "layer2_output.npy": {
+        "shape": [
+          64,
+          12,
+          44
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 33792,
+        "exact": true
+      },
+      "layer3_output.npy": {
+        "shape": [
+          128,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 16896,
+        "exact": true
+      },
+      "layer4_output.npy": {
+        "shape": [
+          160,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 21120,
+        "exact": true
+      },
+      "gap.int16.npy": {
+        "shape": [
+          160
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 160,
+        "exact": true
+      }
+    },
+    "raw": {
+      "layer1_output.npy": {
+        "shape": [
+          32,
+          24,
+          88
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 67584,
+        "exact": true
+      },
+      "layer2_output.npy": {
+        "shape": [
+          64,
+          12,
+          44
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 33792,
+        "exact": true
+      },
+      "layer3_output.npy": {
+        "shape": [
+          128,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 16896,
+        "exact": true
+      },
+      "layer4_output.npy": {
+        "shape": [
+          160,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 21120,
+        "exact": true
+      },
+      "gap.int16.npy": {
+        "shape": [
+          160
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 160,
+        "exact": true
+      }
+    }
+  },
+  "raw_vs_int16": {
+    "00001": {
+      "layer1_output.npy": {
+        "shape": [
+          32,
+          24,
+          88
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 67584,
+        "exact": true
+      },
+      "layer2_output.npy": {
+        "shape": [
+          64,
+          12,
+          44
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 33792,
+        "exact": true
+      },
+      "layer3_output.npy": {
+        "shape": [
+          128,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 16896,
+        "exact": true
+      },
+      "layer4_output.npy": {
+        "shape": [
+          160,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 21120,
+        "exact": true
+      },
+      "gap.int16.npy": {
+        "shape": [
+          160
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 160,
+        "exact": true
+      }
+    },
+    "00002": {
+      "layer1_output.npy": {
+        "shape": [
+          32,
+          24,
+          88
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 67584,
+        "exact": true
+      },
+      "layer2_output.npy": {
+        "shape": [
+          64,
+          12,
+          44
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 33792,
+        "exact": true
+      },
+      "layer3_output.npy": {
+        "shape": [
+          128,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 16896,
+        "exact": true
+      },
+      "layer4_output.npy": {
+        "shape": [
+          160,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 21120,
+        "exact": true
+      },
+      "gap.int16.npy": {
+        "shape": [
+          160
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 160,
+        "exact": true
+      }
+    },
+    "00014": {
+      "layer1_output.npy": {
+        "shape": [
+          32,
+          24,
+          88
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 67584,
+        "exact": true
+      },
+      "layer2_output.npy": {
+        "shape": [
+          64,
+          12,
+          44
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 33792,
+        "exact": true
+      },
+      "layer3_output.npy": {
+        "shape": [
+          128,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 16896,
+        "exact": true
+      },
+      "layer4_output.npy": {
+        "shape": [
+          160,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 21120,
+        "exact": true
+      },
+      "gap.int16.npy": {
+        "shape": [
+          160
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 160,
+        "exact": true
+      }
+    },
+    "00022": {
+      "layer1_output.npy": {
+        "shape": [
+          32,
+          24,
+          88
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 67584,
+        "exact": true
+      },
+      "layer2_output.npy": {
+        "shape": [
+          64,
+          12,
+          44
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 33792,
+        "exact": true
+      },
+      "layer3_output.npy": {
+        "shape": [
+          128,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 16896,
+        "exact": true
+      },
+      "layer4_output.npy": {
+        "shape": [
+          160,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 21120,
+        "exact": true
+      },
+      "gap.int16.npy": {
+        "shape": [
+          160
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 160,
+        "exact": true
+      }
+    },
+    "00034": {
+      "layer1_output.npy": {
+        "shape": [
+          32,
+          24,
+          88
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 67584,
+        "exact": true
+      },
+      "layer2_output.npy": {
+        "shape": [
+          64,
+          12,
+          44
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 33792,
+        "exact": true
+      },
+      "layer3_output.npy": {
+        "shape": [
+          128,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 16896,
+        "exact": true
+      },
+      "layer4_output.npy": {
+        "shape": [
+          160,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 21120,
+        "exact": true
+      },
+      "gap.int16.npy": {
+        "shape": [
+          160
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 160,
+        "exact": true
+      }
+    },
+    "00047": {
+      "layer1_output.npy": {
+        "shape": [
+          32,
+          24,
+          88
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 67584,
+        "exact": true
+      },
+      "layer2_output.npy": {
+        "shape": [
+          64,
+          12,
+          44
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 33792,
+        "exact": true
+      },
+      "layer3_output.npy": {
+        "shape": [
+          128,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 16896,
+        "exact": true
+      },
+      "layer4_output.npy": {
+        "shape": [
+          160,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 21120,
+        "exact": true
+      },
+      "gap.int16.npy": {
+        "shape": [
+          160
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 160,
+        "exact": true
+      }
+    },
+    "00048": {
+      "layer1_output.npy": {
+        "shape": [
+          32,
+          24,
+          88
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 67584,
+        "exact": true
+      },
+      "layer2_output.npy": {
+        "shape": [
+          64,
+          12,
+          44
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 33792,
+        "exact": true
+      },
+      "layer3_output.npy": {
+        "shape": [
+          128,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 16896,
+        "exact": true
+      },
+      "layer4_output.npy": {
+        "shape": [
+          160,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 21120,
+        "exact": true
+      },
+      "gap.int16.npy": {
+        "shape": [
+          160
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 160,
+        "exact": true
+      }
+    },
+    "00059": {
+      "layer1_output.npy": {
+        "shape": [
+          32,
+          24,
+          88
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 67584,
+        "exact": true
+      },
+      "layer2_output.npy": {
+        "shape": [
+          64,
+          12,
+          44
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 33792,
+        "exact": true
+      },
+      "layer3_output.npy": {
+        "shape": [
+          128,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 16896,
+        "exact": true
+      },
+      "layer4_output.npy": {
+        "shape": [
+          160,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 21120,
+        "exact": true
+      },
+      "gap.int16.npy": {
+        "shape": [
+          160
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 160,
+        "exact": true
+      }
+    },
+    "00064": {
+      "layer1_output.npy": {
+        "shape": [
+          32,
+          24,
+          88
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 67584,
+        "exact": true
+      },
+      "layer2_output.npy": {
+        "shape": [
+          64,
+          12,
+          44
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 33792,
+        "exact": true
+      },
+      "layer3_output.npy": {
+        "shape": [
+          128,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 16896,
+        "exact": true
+      },
+      "layer4_output.npy": {
+        "shape": [
+          160,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 21120,
+        "exact": true
+      },
+      "gap.int16.npy": {
+        "shape": [
+          160
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 160,
+        "exact": true
+      }
+    },
+    "00070": {
+      "layer1_output.npy": {
+        "shape": [
+          32,
+          24,
+          88
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 67584,
+        "exact": true
+      },
+      "layer2_output.npy": {
+        "shape": [
+          64,
+          12,
+          44
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 33792,
+        "exact": true
+      },
+      "layer3_output.npy": {
+        "shape": [
+          128,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 16896,
+        "exact": true
+      },
+      "layer4_output.npy": {
+        "shape": [
+          160,
+          6,
+          22
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 21120,
+        "exact": true
+      },
+      "gap.int16.npy": {
+        "shape": [
+          160
+        ],
+        "max_lsb": 0,
+        "mismatches": 0,
+        "total_values": 160,
+        "exact": true
+      }
+    }
+  },
+  "source_ax7020": "reference/ax7020_direct_10.csv",
+  "numerical_tolerance": 1e-06,
+  "no_file_integrity_seal": true,
+  "hardware": {
+    "old_bit": "/home/xilinx/pynq_original4_v14_test/overlay/pynq_z2_original4_v14_raw_100mhz.bit",
+    "bit": "/home/xilinx/pynq_original4_v14_test/overlay/pynq_z2_original4_v14_raw_100mhz.bit",
+    "version": 65540,
+    "clock_before": {
+      "registers": {
+        "ARM_PLL_CTRL": 106496,
+        "DDR_PLL_CTRL": 86016,
+        "IO_PLL_CTRL": 81920,
+        "PLL_STATUS": 63,
+        "ARM_CLK_CTRL": 520094208,
+        "DDR_CLK_CTRL": 203423747,
+        "FPGA0_CLK_CTRL": 2098432,
+        "FPGA1_CLK_CTRL": 1050368,
+        "FPGA2_CLK_CTRL": 1049856,
+        "FPGA3_CLK_CTRL": 2097920,
+        "BOOT_MODE": 5
+      },
+      "fclk0_mhz": 100.0,
+      "pynq_fclk0_mhz": 100.0,
+      "source": "IO_PLL_CTRL",
+      "divider0": 5,
+      "divider1": 2,
+      "changed_clock": false
+    },
+    "clock_after": {
+      "registers": {
+        "ARM_PLL_CTRL": 106496,
+        "DDR_PLL_CTRL": 86016,
+        "IO_PLL_CTRL": 81920,
+        "PLL_STATUS": 63,
+        "ARM_CLK_CTRL": 520094208,
+        "DDR_CLK_CTRL": 203423747,
+        "FPGA0_CLK_CTRL": 2098432,
+        "FPGA1_CLK_CTRL": 1050368,
+        "FPGA2_CLK_CTRL": 1049856,
+        "FPGA3_CLK_CTRL": 2097920,
+        "BOOT_MODE": 5
+      },
+      "fclk0_mhz": 100.0,
+      "pynq_fclk0_mhz": 100.0,
+      "source": "IO_PLL_CTRL",
+      "divider0": 5,
+      "divider1": 2,
+      "changed_clock": false
+    },
+    "downloaded": false,
+    "adapter": "PYNQ2018_Xlnk_noncacheable_simpleDMA",
+    "physical_addresses_from_paired_hwh": [
+      1073741824,
+      1105199104
+    ]
+  },
+  "fclk_after": {
+    "registers": {
+      "ARM_PLL_CTRL": 106496,
+      "DDR_PLL_CTRL": 86016,
+      "IO_PLL_CTRL": 81920,
+      "PLL_STATUS": 63,
+      "ARM_CLK_CTRL": 520094208,
+      "DDR_CLK_CTRL": 203423747,
+      "FPGA0_CLK_CTRL": 2098432,
+      "FPGA1_CLK_CTRL": 1050368,
+      "FPGA2_CLK_CTRL": 1049856,
+      "FPGA3_CLK_CTRL": 2097920,
+      "BOOT_MODE": 5
+    },
+    "fclk0_mhz": 100.0,
+    "pynq_fclk0_mhz": 100.0,
+    "source": "IO_PLL_CTRL",
+    "divider0": 5,
+    "divider1": 2,
+    "changed_clock": false
+  },
+  "summary": {
+    "samples_per_mode": 10,
+    "modes": 2,
+    "max_abs_diff_vs_ax7020": 0.0,
+    "mean_abs_diff_vs_ax7020": 0.0,
+    "exact_predictions": 20,
+    "close_predictions": 20,
+    "host_timing_not_pure_compute": true
+  },
+  "dma_halted_before_free": true
+}
